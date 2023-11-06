@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+    <div class="header__cont">
+        <div class="header__left">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+            <!-- <button class="endorder-btn">Завершите свой заказ</button> -->
+        </div>
+        <div class="header__right">
+            <button class="docs-btn">
+                Популярные документы
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 0.5L4 4L7.5 0.5" stroke="#7F83DD"/>
+                </svg>                    
+            </button>
+        </div>
+    </div>
+</header>
+			<main class="page">
+                <div class="editPhoto">
+    <div class="editPhoto__cont">
+        <div class="img"><img src="img/Group 35.png" alt=""></div>
+        <div class="editPhoto__buttons">
+            <button>
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M9 0C4.02571 0 0 4.02525 0 9C0 13.9742 4.02525 18 9 18C13.9743 18 18 13.9747 18 9C18 4.02578 13.9747 0 9 0ZM9.92422 12.5726C9.92422 12.857 9.50959 13.1412 9.00018 13.1412C8.46707 13.1412 8.08801 12.857 8.08801 12.5726V8.05901C8.08801 7.72731 8.4671 7.50217 9.00018 7.50217C9.50959 7.50217 9.92422 7.72731 9.92422 8.05901V12.5726ZM9.00021 6.41236C8.45525 6.41236 8.02881 6.00957 8.02881 5.55936C8.02881 5.10919 8.45529 4.71825 9.00021 4.71825C9.53332 4.71825 9.95984 5.10919 9.95984 5.55936C9.95984 6.00957 9.53329 6.41236 9.00021 6.41236Z" fill="#7F83DD"/>
+                </svg>                    
+                Подробные критерии фото
+            </button>
+            <button>
+                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M11.8899 8.5333C11.8899 10.1323 10.5891 11.4331 8.99008 11.4331C7.39109 11.4331 6.09081 10.1323 6.09081 8.5333C6.09081 6.9343 7.39109 5.63353 8.99008 5.63353C10.5891 5.63353 11.8899 6.9348 11.8899 8.5333ZM17.9802 4.41576V12.6518C17.9802 13.7498 17.09 14.64 15.992 14.64H1.98819C0.890211 14.64 0 13.7498 0 12.6518V4.41576C0 3.31779 0.890211 2.42758 1.98819 2.42758H4.43366V1.73966C4.43366 0.778872 5.21203 0 6.17332 0H11.8068C12.7681 0 13.5465 0.778872 13.5465 1.73966V2.42708H15.992C17.09 2.42758 17.9802 3.31779 17.9802 4.41576ZM13.381 8.5333C13.381 6.11218 11.4112 4.14239 8.99008 4.14239C6.56947 4.14239 4.59967 6.11218 4.59967 8.5333C4.59967 10.9544 6.56947 12.9242 8.99008 12.9242C11.4112 12.9242 13.381 10.9544 13.381 8.5333Z" fill="#7F83DD"/>
+                </svg>
+                Переделать фото                    
+            </button>
+        </div>
+    </div>
+</div>
+                <div class="photoType">
+    <div class="photoType__cont">
+        <h2>Выберите тип фотографии</h2>
+        <div class="photoType__flex">
+            <div onclick="setType(this)" class="photoType__item active">
+                <div class="photoType__item-title">
+                    <label for="" class="checkbox">
+                        <input type="checkbox" name="" id="" checked="true">
+                        <span></span>
+                        <p>Цифровой</p>
+                    </label>
+                    <div class="price">
+                        <p>56.99$</p>
+                        <span>156.99$</span>
+                    </div>
+                </div>
+                <div class="photoType__item-info">
+                    <div class="icon"><img src="img/check.svg" alt=""></div>
+                    <p>Высокое разрешение</p>
+                </div>
+                <div class="photoType__item-info">
+                    <div class="icon"><img src="img/check.svg" alt=""></div>
+                    <p>Дополнительная фотопроверка нашим экспертом</p>
+                </div>
+                <div class="photoType__item-info">
+                    <div class="icon"><img src="img/check.svg" alt=""></div>
+                    <p>Готовый к печати шаблон</p>
+                </div>
+                <div class="photoType__item-info">
+                    <div class="icon"><img src="img/check.svg" alt=""></div>
+                    <p>Гарантия приема или 200% возврат оплаты</p>
+                </div>
+                <div class="photoType__item-info not-type">
+                    <div class="icon"><img src="img/close.svg" alt=""></div>
+                    <p>Распечатка на бумаге премиум-класса</p>
+                </div>
+                <div class="photoType__item-info not-type">
+                    <div class="icon"><img src="img/close.svg" alt=""></div>
+                    <p>Бесплатная доставка</p>
+                </div>
+                <div class="photoType__item-bottom">
+                    <p>PNG высокого качества</p>
+                </div>
+            </div>
+            <div onclick="setType(this)" class="photoType__item">
+                <div class="photoType__item-title">
+                    <label for="" class="checkbox">
+                        <input type="checkbox" name="" id="">
+                        <span></span>
+                        <p>Напечатано</p>
+                    </label>
+                    <div class="price">
+                        <p>76.99$</p>
+                        <span>256.99$</span>
+                    </div>
+                </div>
+                <div class="photoType__item-info">
+                    <div class="icon"><img src="img/check.svg" alt=""></div>
+                    <p>Дополнительная фотопроверка нашим экспертом</p>
+                </div>
+                <div class="photoType__item-info">
+                    <div class="icon"><img src="img/check.svg" alt=""></div>
+                    <p>Готовый к печати шаблон</p>
+                </div>
+                <div class="photoType__item-info">
+                    <div class="icon"><img src="img/check.svg" alt=""></div>
+                    <p>Гарантия приема или 200% возврат оплаты</p>
+                </div>
+                <div class="photoType__item-info">
+                    <div class="icon"><img src="img/check.svg" alt=""></div>
+                    <p>Высокое разрешение</p>
+                </div>
+                <div class="photoType__item-info">
+                    <div class="icon"><img src="img/check.svg" alt=""></div>
+                    <p>Распечатка на бумаге премиум-класса</p>
+                </div>
+                <div class="photoType__item-info">
+                    <div class="icon"><img src="img/check.svg" alt=""></div>
+                    <p>Бесплатная доставка</p>
+                </div>
+                <div class="photoType__item-bottom">
+                    <p>4 Photos + Digital included</p>
+                    <p>PNG высокого качества</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+                <div class="userData">
+    <div class="userData__cont">
+        <h2>Ваши данные</h2>
+        <form action="" class="userData__form">
+            <p>Адрес электронной почты
+                <span>Эл. почта (только для связи относительно фото)</span>
+            </p>
+            <label for="" class="text-input">
+                <input type="text">
+            </label>
+            <label for="" class="label-checkbox">
+                <input type="checkbox" name="" id="">
+                <span></span>
+                <p>Размещая этот заказ, вы соглашаетесь с нашими 
+                    <a href=""> Политика конфиденциальности </a> и <a href=""> Условия использования </a> (обязательно)
+                </p>
+            </label>
+            <button>
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0_11_115)">
+                    <path d="M13 0C5.83136 0 0 5.83136 0 13C0 20.1686 5.83136 26 13 26C20.1686 26 26 20.1676 26 13C26 5.83238 20.1686 0 13 0ZM13 23.9861C6.94307 23.9861 2.01393 19.0579 2.01393 13C2.01393 6.94205 6.94307 2.01393 13 2.01393C19.0569 2.01393 23.9861 6.94205 23.9861 13C23.9861 19.0579 19.0579 23.9861 13 23.9861Z" fill="#7F83DD"/>
+                    <path d="M18.0348 11.9024H14.007V7.87455C14.007 7.3187 13.5568 6.86756 13 6.86756C12.4431 6.86756 11.993 7.3187 11.993 7.87455V11.9024H7.96512C7.40825 11.9024 6.95813 12.3536 6.95813 12.9094C6.95813 13.4653 7.40825 13.9164 7.96512 13.9164H11.993V17.9443C11.993 18.5001 12.4431 18.9513 13 18.9513C13.5568 18.9513 14.007 18.5001 14.007 17.9443V13.9164H18.0348C18.5917 13.9164 19.0418 13.4653 19.0418 12.9094C19.0418 12.3536 18.5917 11.9024 18.0348 11.9024Z" fill="#7F83DD"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_11_115">
+                    <rect width="26" height="26" fill="white"/>
+                    </clipPath>
+                    </defs>
+                </svg>
+                Добавить комментарий                    
+            </button>
+        </form>
+    </div>
+</div>
+                <div class="payment">
+    <div class="payment__cont">
+        <h2>Оплата</h2>
+        <div class="payment__box">
+            <div class="payment__item">
+                <div class="payment__title">
+                    <label for="" class="checkbox">
+                        <input type="checkbox" name="" id="">
+                        <span></span>
+                        <p>Google Pay</p>
+                    </label>
+                    <div class="icon"><img src="img/image 2.png" alt=""></div>
+                </div>
+            </div>
+            <div class="payment__item">
+                <div class="payment__title">
+                    <label for="" class="checkbox">
+                        <input type="checkbox" name="" id="">
+                        <span></span>
+                        <p>PayPal</p>
+                    </label>
+                    <div class="icon"><img src="img/image 3 (1).png" alt=""></div>
+                </div>
+            </div>
+            <div class="payment__item active">
+                <div class="payment__title">
+                    <label for="" class="checkbox">
+                        <input type="checkbox" checked="true">
+                        <span></span>
+                        <p>Кредитная карта</p>
+                    </label>
+                    <div class="icon"><img src="img/image 4.png" alt=""></div>
+                </div>
+                <form action="" class="payment__form">
+                    <label for="">Номер карты
+                        <input type="text">
+                    </label>
+                    <label for="">Срок действия
+                        <input type="text">
+                    </label>
+                    <label for="">CVV/CVC
+                        <input type="text">
+                    </label>
+                </form>
+            </div>
+        </div>
+        <input type="submit" class="payment__btn" value="Оплатить сейчас 78.99$">
+    </div>
+</div>
+			</main>
+			<footer class="footer">
+    <div class="footer__cont">
+        <div class="footer__left">
+            <a href="/" class="logo">
+                <img src="img/logo.svg" alt="">
+            </a>
+        </div>
+        <div class="footer__right">
+            <button class="docs-btn">
+                Популярные документы
+                <svg width="8" height="5" viewBox="0 0 8 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0.5 0.5L4 4L7.5 0.5" stroke="#7F83DD"/>
+                </svg>                    
+            </button>
+        </div>
+    </div>
+</footer>
+		</div>
+		<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	</body>
+</html>

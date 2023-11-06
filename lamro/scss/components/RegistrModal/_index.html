@@ -1,0 +1,37 @@
+<div class="modal" id="registr-modal">
+    <div class="modal__container">
+        <button class="clous-modal" onclick="showModal()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.451 15C14.3105 15 14.1702 14.9464 14.0628 14.8392L1.16092 1.93723C0.946361 1.7229 0.946361 1.37526 1.16092 1.16092C1.37525 0.946361 1.72311 0.946361 1.93722 1.16092L14.8391 14.0629C15.0536 14.2775 15.0536 14.6249 14.8391 14.8392C14.7319 14.9464 14.5916 15 14.451 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+                <path d="M1.54918 15C1.40863 15 1.26808 14.9464 1.16092 14.8392C0.946361 14.6247 0.946361 14.2773 1.16092 14.0629L14.0628 1.16092C14.2773 0.946361 14.6247 0.946361 14.8391 1.16092C15.0536 1.37526 15.0536 1.7229 14.8391 1.93723L1.93722 14.8392C1.83028 14.9464 1.68973 15 1.54918 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+            </svg>                
+        </button>
+        <div class="registr-modal">
+            <div class="registr-modal__title">
+                <h2>Регистрация</h2>
+                <p>Уже являетесь клиентом? 
+                    <button onclick="showModal('login-modal')"> Войти </button>
+                </p>
+            </div>
+            <form action="">
+                <label for="" class="input-text"> Ваше имя
+                    <input type="text" readonly onfocus="this.removeAttribute('readonly');" placeholder="">
+                </label>
+                <label for="" class="input-text" id="phone-container"> Номер телефона
+                    <input type="tel" id="new_user_phone" readonly onfocus="this.removeAttribute('readonly');" placeholder="">
+                </label>
+                <label for="" class="input-text" id="reg-email"> E-mail
+                    <input type="text" readonly onfocus="this.removeAttribute('readonly');" placeholder="E-mail">
+                </label>
+                <label for="" class="checkbox">
+                    <input type="checkbox" name="" id="email-checkbox">
+                    <span></span>
+                    <p>У меня нет email</p>
+                </label>
+                <label for="" class="input-btn">
+                    <input type="submit" value="Зарегистрироваться">
+                </label>
+            </form>
+        </div>
+    </div>
+</div>

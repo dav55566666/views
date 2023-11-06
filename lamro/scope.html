@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body id="body">
+		<div class="wrapper">
+			<header class="header" id="header">
+	<div class="header__container _container">
+		<a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+		<div class="header__right">
+			<div class="tv-series-btn">
+				<a href="/#convenient" class="allink"></a>
+				<div class="icon">
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M4.26255 1.375C3.3691 1.375 2.51225 1.78062 1.88048 2.50264C1.24872 3.22465 0.893799 4.20392 0.893799 5.225V12.925C0.893799 13.9461 1.24872 14.9253 1.88048 15.6474C2.51225 16.3694 3.3691 16.775 4.26255 16.775H17.7375C18.631 16.775 19.4879 16.3694 20.1196 15.6474C20.7514 14.9253 21.1063 13.9461 21.1063 12.925V5.225C21.1063 4.20392 20.7514 3.22465 20.1196 2.50264C19.4879 1.78062 18.631 1.375 17.7375 1.375H4.26255ZM2.57817 5.225C2.57817 4.71446 2.75563 4.22483 3.07152 3.86382C3.3874 3.50281 3.81582 3.3 4.26255 3.3H17.7375C18.1843 3.3 18.6127 3.50281 18.9286 3.86382C19.2445 4.22483 19.4219 4.71446 19.4219 5.225V12.925C19.4219 13.4355 19.2445 13.9252 18.9286 14.2862C18.6127 14.6472 18.1843 14.85 17.7375 14.85H4.26255C3.81582 14.85 3.3874 14.6472 3.07152 14.2862C2.75563 13.9252 2.57817 13.4355 2.57817 12.925V5.225ZM5.10474 18.7C4.88137 18.7 4.66716 18.8014 4.50922 18.9819C4.35128 19.1624 4.26255 19.4072 4.26255 19.6625C4.26255 19.9178 4.35128 20.1626 4.50922 20.3431C4.66716 20.5236 4.88137 20.625 5.10474 20.625H16.8954C17.1187 20.625 17.3329 20.5236 17.4909 20.3431C17.6488 20.1626 17.7375 19.9178 17.7375 19.6625C17.7375 19.4072 17.6488 19.1624 17.4909 18.9819C17.3329 18.8014 17.1187 18.7 16.8954 18.7H5.10474Z"
+							fill="#737D7D" stroke="#737D7D" stroke-width="0.4" />
+					</svg>
+				</div>
+				<div class="hide">
+					<p>Узнайте, как установить наше <br>приложение на Smart TV</p>
+				</div>
+			</div>
+			<a href="tel:+32466900017" class="call-btn">
+				<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_109_432)">
+						<path
+							d="M16.2788 12.6416C16.236 12.621 14.6321 11.8312 14.3471 11.7286C14.2308 11.6869 14.1061 11.6461 13.9735 11.6461C13.757 11.6461 13.575 11.754 13.4333 11.966C13.2731 12.2041 12.7881 12.7711 12.6383 12.9404C12.6187 12.9628 12.592 12.9895 12.576 12.9895C12.5616 12.9895 12.3134 12.8873 12.2383 12.8546C10.5178 12.1073 9.21183 10.3101 9.03276 10.007C9.00719 9.96342 9.00612 9.94364 9.0059 9.94364C9.01219 9.92057 9.07005 9.86257 9.0999 9.83264C9.18726 9.74621 9.2819 9.63228 9.37348 9.52207C9.41683 9.46985 9.46026 9.41757 9.5029 9.36828C9.63576 9.21371 9.6949 9.09371 9.76347 8.95471L9.7994 8.88249C9.96683 8.54985 9.82383 8.26914 9.77762 8.17849C9.73969 8.10264 9.06247 6.46821 8.99047 6.29649C8.81733 5.88214 8.58855 5.68921 8.27062 5.68921C8.24112 5.68921 8.27062 5.68921 8.1469 5.69442C7.99626 5.70078 7.1759 5.80878 6.81319 6.03742C6.42855 6.27992 5.77783 7.05292 5.77783 8.41235C5.77783 9.63585 6.55426 10.7911 6.88762 11.2304C6.8959 11.2415 6.91112 11.264 6.93319 11.2963C8.20983 13.1607 9.80133 14.5424 11.4147 15.1869C12.9679 15.8074 13.7034 15.8791 14.1215 15.8791H14.1216C14.2973 15.8791 14.438 15.8653 14.562 15.8531L14.6408 15.8456C15.1773 15.798 16.3565 15.187 16.6247 14.4416C16.836 13.8546 16.8917 13.2131 16.7511 12.9804C16.6548 12.8221 16.4889 12.7424 16.2788 12.6416Z"
+							fill="#737D7D" />
+						<path
+							d="M11.1953 0C5.23698 0 0.389555 4.811 0.389555 10.7245C0.389555 12.6371 0.901412 14.5094 1.87105 16.1479L0.0151263 21.6226C-0.0194452 21.7246 0.00626912 21.8375 0.0817691 21.9144C0.136269 21.97 0.210198 22 0.285698 22C0.314626 22 0.343769 21.9956 0.372198 21.9866L6.08077 20.1726C7.64291 21.0072 9.40848 21.4478 11.1953 21.4478C17.1531 21.4479 22 16.6374 22 10.7245C22 4.811 17.1531 0 11.1953 0ZM11.1953 19.2139C9.51391 19.2139 7.88541 18.7284 6.48556 17.8098C6.43848 17.7789 6.38384 17.763 6.32884 17.763C6.29977 17.763 6.27063 17.7674 6.24227 17.7764L3.38263 18.6854L4.30577 15.9619C4.33563 15.8738 4.3207 15.7766 4.2657 15.7014C3.1997 14.2449 2.6362 12.5239 2.6362 10.7245C2.6362 6.04286 6.47577 2.234 11.1952 2.234C15.9141 2.234 19.7532 6.04286 19.7532 10.7245C19.7533 15.4056 15.9142 19.2139 11.1953 19.2139Z"
+							fill="#737D7D" />
+					</g>
+					<defs>
+						<clipPath id="clip0_109_432">
+							<rect width="22" height="22" fill="white" />
+						</clipPath>
+					</defs>
+				</svg>
+				+32 466 90 00 17
+			</a>
+			<!-- если пользователь нет -->
+			<button class="login-btn" onclick="showModal('login-modal')">ВОЙТИ</button>
+			<!-- если пользователь есть -->
+			<!-- <div class="header__user">
+				<div class="header__user-avatars">
+					<div class="avatars__item">
+						<button class="removeavatar">
+							<svg width="43" height="44" viewBox="0 0 43 44" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle cx="21.7034" cy="22" r="15" transform="rotate(-45 21.7034 22)"
+									fill="#071A1A" />
+								<path
+									d="M16.696 16.9928C16.3796 17.3092 16.3796 17.822 16.696 18.1384L20.5576 22L16.696 25.8616C16.3796 26.178 16.3796 26.6908 16.696 27.0072C17.0124 27.3236 17.5253 27.3236 17.8416 27.0072L21.7032 23.1456L25.5648 27.0072C25.8812 27.3236 26.394 27.3236 26.7104 27.0072C27.0268 26.6908 27.0268 26.1779 26.7104 25.8616L22.8488 22L26.7104 18.1384C27.0268 17.8221 27.0268 17.3092 26.7104 16.9928C26.394 16.6764 25.8812 16.6764 25.5648 16.9928L21.7032 20.8544L17.8416 16.9928C17.5253 16.6764 17.0124 16.6764 16.696 16.9928Z"
+									fill="#65AF69" stroke="#65AF69" stroke-width="0.1" />
+							</svg>
+						</button>
+						<button class="set-avatar">
+							<img src="img/avatar.png" alt="">
+							<span>Папочка</span>
+						</button>
+					</div>
+					<div class="avatars__item">
+						<button class="removeavatar">
+							<svg width="43" height="44" viewBox="0 0 43 44" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle cx="21.7034" cy="22" r="15" transform="rotate(-45 21.7034 22)"
+									fill="#071A1A" />
+								<path
+									d="M16.696 16.9928C16.3796 17.3092 16.3796 17.822 16.696 18.1384L20.5576 22L16.696 25.8616C16.3796 26.178 16.3796 26.6908 16.696 27.0072C17.0124 27.3236 17.5253 27.3236 17.8416 27.0072L21.7032 23.1456L25.5648 27.0072C25.8812 27.3236 26.394 27.3236 26.7104 27.0072C27.0268 26.6908 27.0268 26.1779 26.7104 25.8616L22.8488 22L26.7104 18.1384C27.0268 17.8221 27.0268 17.3092 26.7104 16.9928C26.394 16.6764 25.8812 16.6764 25.5648 16.9928L21.7032 20.8544L17.8416 16.9928C17.5253 16.6764 17.0124 16.6764 16.696 16.9928Z"
+									fill="#65AF69" stroke="#65AF69" stroke-width="0.1" />
+							</svg>
+						</button>
+						<button class="set-avatar">
+							<img src="img/805bd42aa6895fa7569aefdcf3a4b07d.png" alt="">
+							<span>Робот</span>
+						</button>
+					</div>
+					<div class="avatars__item">
+						<button class="removeavatar">
+							<svg width="43" height="44" viewBox="0 0 43 44" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle cx="21.7034" cy="22" r="15" transform="rotate(-45 21.7034 22)"
+									fill="#071A1A" />
+								<path
+									d="M16.696 16.9928C16.3796 17.3092 16.3796 17.822 16.696 18.1384L20.5576 22L16.696 25.8616C16.3796 26.178 16.3796 26.6908 16.696 27.0072C17.0124 27.3236 17.5253 27.3236 17.8416 27.0072L21.7032 23.1456L25.5648 27.0072C25.8812 27.3236 26.394 27.3236 26.7104 27.0072C27.0268 26.6908 27.0268 26.1779 26.7104 25.8616L22.8488 22L26.7104 18.1384C27.0268 17.8221 27.0268 17.3092 26.7104 16.9928C26.394 16.6764 25.8812 16.6764 25.5648 16.9928L21.7032 20.8544L17.8416 16.9928C17.5253 16.6764 17.0124 16.6764 16.696 16.9928Z"
+									fill="#65AF69" stroke="#65AF69" stroke-width="0.1" />
+							</svg>
+						</button>
+						<button class="set-avatar">
+							<img src="img/d29fd0cda74967441d002eaab30a2b96.png" alt="">
+							<span>A</span>
+						</button>
+					</div>
+					<div class="avatars__item">
+						<label for="" class="input-file">
+							<svg width="128" height="128" viewBox="0 0 128 128" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle cx="64" cy="64" r="64" fill="#071A1A" />
+								<path
+									d="M64 33.95C62.1812 33.95 60.707 35.4242 60.707 37.243V60.707H37.243C35.4242 60.707 33.95 62.1812 33.95 64C33.95 65.8188 35.4242 67.293 37.243 67.293H60.707V90.757C60.707 92.5758 62.1812 94.05 64 94.05C65.8188 94.05 67.293 92.5758 67.293 90.757V67.293H90.757C92.5758 67.293 94.05 65.8188 94.05 64C94.05 62.1812 92.5758 60.707 90.757 60.707H67.293V37.243C67.293 35.4242 65.8188 33.95 64 33.95Z"
+									fill="#65AF69" stroke="#65AF69" stroke-width="0.1" />
+							</svg>
+							<input type="file" name="" id="">
+							<span>Новый</span>
+						</label>
+					</div>
+				</div>
+				<button id="showusermenu" onclick="showUserMenu()">
+					<img src="img/avatar.png" alt="">
+					<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.00293 1L5.00293 5L9.00293 1" stroke="white" stroke-width="1.6"
+							stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="header__user-menu" id="user-menu">
+					<div class="header__user-info">
+						<p>Rasul</p>
+						<p>Логин:
+							<span>32105</span>
+						</p>
+					</div>
+					<button class="user-menu-btn">Изменить профиль</button>
+					<button class="user-menu-btn">Введите промо-код</button>
+					<a href="" class="user-menu-btn">Персональный аккаунт</a>
+					<a href="" class="user-menu-btn">Выйти</a>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</header>
+
+<button class="up-btn" id="up-btn">
+	<svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path
+			d="M32 62.4374C48.5684 62.4374 62 49.0061 62 32.4374C62 15.8689 48.5684 2.43744 32 2.43744C15.4314 2.43744 2 15.8689 2 32.4374C2 49.0061 15.4314 62.4374 32 62.4374Z"
+			stroke="#6EB36B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+		<path
+			d="M20 36.7574L28.61 27.5777C29.0375 27.1025 29.5604 26.7224 30.1445 26.4623C30.7283 26.2022 31.3607 26.0675 32 26.0675C32.6393 26.0675 33.2717 26.2022 33.8555 26.4623C34.4396 26.7224 34.9625 27.1025 35.39 27.5777L44 36.7574"
+			stroke="#6EB36B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+</button>
+<div class="load-screen" id="load-screen"><span></span><span></span><span></span></div>
+			<main class="page">
+				<section class="new-tv">
+    <div class="new-tv__container _container">
+        <div class="new-tv__title animate__backInDown wow">
+            <h2>Телевидение нового поколения</h2>
+            <p>Почему мы считаемся лучшими в своей нише</p>
+        </div>
+        <div class="new-tv__grid">
+            <div class="new-tv__item wow animate__fadeInLeft">
+                <div class="icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M28.3333 26.6667L21.6667 20V14.7C23.6 14 25 12.1667 25 10C25 7.23333 22.7667 5 20 5C17.2333 5 15 7.23333 15 10C15 12.1667 16.4 14 18.3333 14.7V20L11.6667 26.6667H5V35H13.3333V29.9167L20 22.9167L26.6667 29.9167V35H35V26.6667H28.3333Z" fill="white"/>
+                    </svg>                        
+                </div>
+                <h4>Мультилогин</h4>
+                <p>Просмотр до 5 устройств <br>с единым персональным номером Lamro.TV</p>
+            </div>
+            <div class="new-tv__item wow animate__fadeInDown">
+                <div class="icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M3.33325 33.3333V15C3.33325 14.1159 3.68444 13.2681 4.30956 12.6429C4.93468 12.0178 5.78253 11.6666 6.66659 11.6666H33.3333C34.2173 11.6666 35.0652 12.0178 35.6903 12.6429C36.3154 13.2681 36.6666 14.1159 36.6666 15V33.3333C36.6666 34.2173 36.3154 35.0652 35.6903 35.6903C35.0652 36.3154 34.2173 36.6666 33.3333 36.6666H6.66659C5.78253 36.6666 4.93468 36.3154 4.30956 35.6903C3.68444 35.0652 3.33325 34.2173 3.33325 33.3333Z" stroke="white" stroke-width="2.8"/>
+                        <path d="M14.1665 4.16663L19.9998 9.99996L25.8332 4.16663" stroke="white" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </div>
+                <h4>ТВ- архив 7 дней</h4>
+                <p>Основная часть наших клиентов уже по достоинству оценили данную услугу</p>
+            </div>
+            <div class="new-tv__item wow animate__fadeInUp">
+                <div class="icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M37.625 15.9327L20.0001 34.9134L2.37524 15.9327M37.625 15.9327L29.4904 5.08667H10.5098L2.37524 15.9327M37.625 15.9327H2.37524" stroke="white" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M10.5095 5.08667L19.9998 15.9327L29.4901 5.08667" stroke="white" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </div>
+                <h4>350+ телеканалов</h4>
+                <p>Пакеты лучших российских <br>и зарубежных телеканалов <br>по приятным ценам</p>
+            </div>
+            <div class="new-tv__item wow animate__fadeInRight">
+                <div class="icon">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.4375 8.75V20M1.4375 20V31.2499M1.4375 20H15.875M15.875 20V8.75M15.875 20V31.2499M22.0625 20V8.75C30.3125 8.75 38.5625 8.75 38.5625 20C38.5625 31.2499 30.3125 31.2499 22.0625 31.2499V20Z" stroke="white" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </div>
+                <h4>HD качество</h4>
+                <p>Пакеты каналов в HD качестве. Смотри только лучшее, вместе с нами</p>
+            </div>
+        </div>
+    </div>
+</section>
+				<section class="films" id="films">
+    <div class="films__container _container">
+        <div class="films__title animate__backInDown wow">
+            <h2>Более 10000+ фильмов и шоу</h2>
+            <p>Смотрите блокбастеры и фильмы на своем большом экране</p>
+        </div>
+        <div class="films__animation">
+            <div class="films__tv">
+                <div class="films__tv-img">
+                    <img src="img/Mask group (1).png" alt="">
+                </div>
+                <div class="films__flex">
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="films__bg">
+                <div class="films__flex">
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5.png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (1).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 27 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 26 (2).png" alt="">
+                    </div>
+                    <div class="films__item">
+                        <img src="img/Rectangle 5 (2).png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+				<section class="convenient" id="convenient">
+    <div class="convenient__container _container">
+        <div class="convenient__title animate__backInDown wow">
+            <h2>Удобнее чем когда-либо</h2>
+            <p>Просто скачайте приложение на свой телевизор</p>
+        </div>
+        <div class="convenient__grid">
+            <div class="convenient__item animate__fadeInRight wow">
+                <div class="convenient__item-img">
+                    <img src="img/Samsung_Orig_Wordmark_WHITE_RGB 2.png" alt="">
+                </div>
+                <div class="convenient__item-text">
+                    <img src="img/Samsung_Orig_Wordmark_WHITE_RGB 2.png" alt="">
+                    <p><span>1</span>Откройте Apps на вашем телевизоре Samsung от 2015 года</p>
+                    <p><span>2</span>Введите в поисковой строке Lamro TV</p>
+                    <p><span>3</span>Установите приложение</p>
+                    <p><span>4</span>Запустите и смотрите ТВ</p>
+                </div>
+            </div>
+            <div class="convenient__item animate__fadeInDown wow">
+                <div class="convenient__item-img">
+                    <img src="img/LG_logo_(2015) 1.png" alt="">
+                </div>
+                <div class="convenient__item-text">
+                    <img src="img/LG_logo_(2015) 1.png" alt="">
+                    <p><span>1</span>Откройте LG Content Store на вашем телевизоре LG</p>
+                    <p><span>2</span>Введите в поисковой строке Lamro TV</p>
+                    <p><span>3</span>Установите приложение</p>
+                    <p><span>4</span>Запустите и смотрите ТВ</p>
+                </div>
+            </div>
+            <div class="convenient__item animate__fadeInUp wow">
+                <div class="convenient__item-img">
+                    <img src="img/Android_tv_logo 1.png" alt="">
+                </div>
+                <div class="convenient__item-text">
+                    <img src="img/Android_tv_logo 1.png" alt="">
+                    <p><span>1</span>Откройте Play Store на вашем Android TV</p>
+                    <p><span>2</span>Введите в поисковой строке Lamro TV STB</p>
+                    <p><span>3</span>Установите приложение</p>
+                    <p><span>4</span>Запустите и смотрите ТВ</p>
+                    <a href="">Установить сейчас</a>
+                </div>
+            </div>
+            <div class="convenient__item animate__fadeInLeft wow">
+                <div class="convenient__item-img">
+                    <img src="img/Mask group (2).png" alt="">
+                </div>
+                <div class="convenient__item-text">
+                    <img src="img/Mask group (2).png" alt="">
+                    <p><span>1</span>Откройте Apps на вашем телевизоре Amazon fire TV</p>
+                    <p><span>2</span>Введите в поисковой строке Lamro TV</p>
+                    <p><span>3</span>Установите приложение</p>
+                    <p><span>4</span>Запустите и смотрите ТВ</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+				<section class="home-abaut">
+    <div class="home-abaut__container _container">
+        <div class="home-abaut__title animate__fadeInRight wow">
+            <h2>Lamro.TV — Твой верный спутник!</h2>
+            <p>Это телевидение, для которого не нужно антенны и кабеля</p>
+        </div>
+        <div class="home-abaut__flex">
+            <div class="home-abaut__left animate__fadeInRight wow">
+                <p>Мы — динамично развивающаяся компания, которая работает с применением всех современных технологий. Высокое качество изображения, все нужные каналы на одном устройстве</p>
+                <p>Теперь, ваши любимые фильмы, сериалы и телепередачи, будут доступны просто у вас дома. Для просмотра каналов вам потребуется скачать специальную программу и иметь хорошее интернет соединение</p>
+                <a href="">
+                    Подробнее
+                    <svg width="44" height="22" viewBox="0 0 44 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 9.6C1.2268 9.6 0.6 10.2268 0.6 11C0.6 11.7732 1.2268 12.4 2 12.4V9.6ZM42.9899 11.9899C43.5367 11.4432 43.5367 10.5568 42.9899 10.0101L34.0804 1.1005C33.5337 0.553771 32.6472 0.553771 32.1005 1.1005C31.5538 1.64724 31.5538 2.53367 32.1005 3.0804L40.0201 11L32.1005 18.9196C31.5538 19.4663 31.5538 20.3528 32.1005 20.8995C32.6472 21.4462 33.5337 21.4462 34.0804 20.8995L42.9899 11.9899ZM2 12.4H42V9.6H2V12.4Z" fill="white"/>
+                    </svg>                        
+                </a>
+            </div>
+            <div class="home-abaut__right">
+                <div class="home-abaut__item animate__fadeInUp wow">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20 29.5833L9.7133 34.9917L11.6783 23.5367L3.34497 15.425L14.845 13.7583L19.9883 3.33667L25.1316 13.7583L36.6316 15.425L28.2983 23.5367L30.2633 34.9917L20 29.5833Z" stroke="#737D7D" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </div>
+                    <div class="text">
+                        <h4>Рекомендации</h4>
+                        <p>Смотри только то, что нравится, с опцией фильтрации каналов</p>
+                    </div>
+                </div>
+                <div class="home-abaut__item animate__fadeInUp wow">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.715 4.02166C10.9251 3.77087 11.0285 3.4477 11.0031 3.12151C10.9776 2.79532 10.8252 2.49213 10.5787 2.27702C10.3322 2.06191 10.0111 1.95203 9.68448 1.97097C9.35785 1.98991 9.05167 2.13616 8.83166 2.37833L6.67832 4.845C5.45729 6.24427 4.76705 8.02828 4.72832 9.885L4.63332 14.4167C4.62993 14.5808 4.6589 14.744 4.71859 14.897C4.77827 15.0499 4.8675 15.1896 4.98117 15.3081C5.09485 15.4266 5.23074 15.5215 5.3811 15.5875C5.53146 15.6534 5.69334 15.6891 5.85749 15.6925C6.02164 15.6959 6.18486 15.6669 6.33781 15.6072C6.49077 15.5475 6.63047 15.4583 6.74894 15.3446C6.86741 15.231 6.96233 15.0951 7.02829 14.9447C7.09424 14.7944 7.12993 14.6325 7.13332 14.4683L7.22666 9.93833C7.2534 8.66787 7.72595 7.44726 8.56166 6.49L10.715 4.02166Z" fill="#737D7D"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.395 12.8333C10.5069 11.0502 11.2942 9.37678 12.5965 8.15371C13.8989 6.93063 15.6184 6.24986 17.405 6.24998H18.3333V4.99998C18.3333 4.55795 18.5089 4.13403 18.8215 3.82147C19.134 3.50891 19.558 3.33331 20 3.33331C20.442 3.33331 20.8659 3.50891 21.1785 3.82147C21.4911 4.13403 21.6667 4.55795 21.6667 4.99998V6.24998H22.595C24.3816 6.24986 26.1011 6.93063 27.4035 8.15371C28.7058 9.37678 29.4931 11.0502 29.605 12.8333L29.9733 18.7233C30.1137 20.9691 30.8678 23.1332 32.1533 24.98C32.4189 25.3618 32.5812 25.8058 32.6244 26.2688C32.6676 26.7319 32.5902 27.1983 32.3998 27.6226C32.2094 28.0469 31.9124 28.4147 31.5377 28.6902C31.163 28.9658 30.7234 29.1397 30.2617 29.195L24.5833 29.875V31.6666C24.5833 32.8822 24.1004 34.048 23.2409 34.9076C22.3814 35.7671 21.2156 36.25 20 36.25C18.7844 36.25 17.6186 35.7671 16.7591 34.9076C15.8996 34.048 15.4167 32.8822 15.4167 31.6666V29.875L9.73833 29.1933C9.27682 29.1378 8.83751 28.9639 8.46307 28.6885C8.08864 28.4131 7.7918 28.0455 7.60142 27.6214C7.41103 27.1974 7.33356 26.7313 7.37653 26.2684C7.41951 25.8056 7.58146 25.3617 7.84666 24.98C9.13216 23.1332 9.88621 20.9691 10.0267 18.7233L10.395 12.835V12.8333ZM17.405 8.74998C16.2543 8.74984 15.1468 9.18826 14.308 9.97599C13.4691 10.7637 12.9621 11.8415 12.89 12.99L12.5233 18.88C12.3539 21.5816 11.4465 24.185 9.9 26.4066C9.88078 26.4343 9.86903 26.4664 9.86589 26.4999C9.86275 26.5334 9.86833 26.5671 9.88209 26.5978C9.89584 26.6285 9.91731 26.6551 9.94439 26.6751C9.97148 26.695 10.0033 26.7076 10.0367 26.7116L16.265 27.46C18.7467 27.7566 21.2533 27.7566 23.735 27.46L29.9633 26.7116C29.9967 26.7076 30.0285 26.695 30.0556 26.6751C30.0827 26.6551 30.1042 26.6285 30.1179 26.5978C30.1317 26.5671 30.1372 26.5334 30.1341 26.4999C30.131 26.4664 30.1192 26.4343 30.1 26.4066C28.554 24.1849 27.6472 21.5815 27.4783 18.88L27.11 12.99C27.0379 11.8415 26.5309 10.7637 25.692 9.97599C24.8532 9.18826 23.7457 8.74984 22.595 8.74998H17.405ZM20 33.75C18.85 33.75 17.9167 32.8166 17.9167 31.6666V30.4166H22.0833V31.6666C22.0833 32.8166 21.15 33.75 20 33.75Z" fill="#737D7D"/>
+                            <path d="M29.405 2.25836C29.1553 2.47632 29.0024 2.78451 28.9799 3.11518C28.9574 3.44585 29.0672 3.77192 29.285 4.02169L31.4384 6.48836C32.2738 7.4463 32.7458 8.66754 32.7717 9.93836L32.8667 14.4667C32.8735 14.7982 33.0118 15.1134 33.2511 15.343C33.4903 15.5726 33.811 15.6977 34.1425 15.6909C34.4741 15.684 34.7893 15.5457 35.0188 15.3065C35.2484 15.0672 35.3735 14.7465 35.3667 14.415L35.2717 9.88503C35.233 8.02831 34.5427 6.2443 33.3217 4.84503L31.1684 2.37836C30.9504 2.12867 30.6422 1.97577 30.3115 1.95327C29.9809 1.93076 29.6548 2.0405 29.405 2.25836Z" fill="#737D7D"/>
+                        </svg>                            
+                    </div>
+                    <div class="text">
+                        <h4>Напоминания</h4>
+                        <p>Теперь точно не пропустишь любимую передачу или сериал</p>
+                    </div>
+                </div>
+                <div class="home-abaut__item animate__fadeInUp wow">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.2399 2.08331H23.4266C26.4899 2.08331 28.9166 2.08331 30.8149 2.33831C32.7683 2.60165 34.3499 3.15498 35.5983 4.40165C36.8449 5.64998 37.3983 7.23165 37.6616 9.18498C37.9166 11.085 37.9166 13.51 37.9166 16.5733V23.4266C37.9166 26.49 37.9166 28.9166 37.6616 30.815C37.3983 32.7683 36.8449 34.35 35.5983 35.5983C34.3499 36.845 32.7683 37.3983 30.8149 37.6616C28.9149 37.9166 26.4899 37.9166 23.4266 37.9166H19.9999C19.6684 37.9166 19.3505 37.785 19.116 37.5505C18.8816 37.3161 18.7499 36.9982 18.7499 36.6666C18.7499 36.3351 18.8816 36.0172 19.116 35.7828C19.3505 35.5483 19.6684 35.4166 19.9999 35.4166H23.3333C26.5116 35.4166 28.7699 35.4133 30.4833 35.1833C32.1583 34.9583 33.1249 34.535 33.8299 33.83C34.5349 33.125 34.9583 32.1583 35.1833 30.4816C35.4149 28.77 35.4166 26.5116 35.4166 23.3333V16.6666C35.4166 13.4883 35.4133 11.2316 35.1833 9.51665C34.9583 7.84165 34.5349 6.87498 33.8299 6.16998C33.1249 5.46498 32.1583 5.04165 30.4816 4.81665C28.7699 4.58665 26.5116 4.58331 23.3333 4.58331C20.1549 4.58331 17.8983 4.58665 16.1849 4.81665C14.5083 5.04165 13.5416 5.46498 12.8366 6.16998C11.6766 7.32998 11.3249 9.13165 11.2649 13.3516C11.2625 13.5158 11.2278 13.6779 11.1628 13.8286C11.0977 13.9793 11.0036 14.1158 10.8858 14.2302C10.7681 14.3445 10.6289 14.4346 10.4763 14.4952C10.3238 14.5558 10.1607 14.5857 9.99659 14.5833C9.83243 14.5809 9.67036 14.5462 9.51963 14.4811C9.36889 14.4161 9.23244 14.322 9.11807 14.2042C9.0037 14.0865 8.91365 13.9473 8.85305 13.7947C8.79246 13.6422 8.76251 13.4791 8.76492 13.315C8.82325 9.26998 9.08492 6.38498 11.0683 4.40165C12.3166 3.15498 13.8983 2.60165 15.8516 2.33831C17.7516 2.08331 20.1766 2.08331 23.2399 2.08331ZM9.10325 17.0833H9.22992C10.3466 17.0833 11.2783 17.0833 12.0316 17.16C12.8199 17.24 13.5533 17.415 14.2133 17.8566C14.7133 18.19 15.1433 18.62 15.4783 19.12C15.9183 19.78 16.0933 20.5116 16.1733 21.3016C16.2499 22.055 16.2499 22.9866 16.2499 24.1016V30.8966C16.2499 32.0133 16.2499 32.945 16.1733 33.6983C16.0933 34.4866 15.9183 35.22 15.4783 35.88C15.1429 36.3805 14.7126 36.8103 14.2116 37.145C13.5533 37.585 12.8199 37.76 12.0316 37.84C11.2783 37.9166 10.3466 37.9166 9.23159 37.9166H9.10325C7.98659 37.9166 7.05492 37.9166 6.30159 37.84C5.51325 37.76 4.77992 37.585 4.11992 37.1433C3.61941 36.8093 3.18957 36.38 2.85492 35.88C2.41492 35.22 2.23992 34.4883 2.15992 33.6983C2.08325 32.945 2.08325 32.0133 2.08325 30.8983V24.1033C2.08325 22.9866 2.08325 22.055 2.15992 21.3016C2.23992 20.5116 2.41492 19.78 2.85492 19.12C3.18992 18.62 3.61992 18.19 4.12159 17.8566C4.77992 17.415 5.51325 17.24 6.30159 17.16C7.05492 17.0833 7.98825 17.0833 9.10325 17.0833ZM6.55325 19.6466C5.96325 19.7066 5.68992 19.8133 5.50992 19.935C5.28237 20.0871 5.08699 20.2824 4.93492 20.51C4.81325 20.69 4.70659 20.9633 4.64659 21.555C4.58492 22.1666 4.58325 22.9716 4.58325 24.1666V30.8333C4.58325 32.03 4.58325 32.8333 4.64659 33.445C4.70659 34.0366 4.81325 34.31 4.93492 34.4916C5.08492 34.7183 5.28159 34.9133 5.50992 35.065C5.68992 35.1866 5.96325 35.2933 6.55492 35.3533C7.16659 35.415 7.97159 35.4166 9.16658 35.4166C10.3633 35.4166 11.1666 35.4166 11.7783 35.3533C12.3699 35.2933 12.6433 35.1866 12.8233 35.065C13.0516 34.915 13.2466 34.7183 13.3983 34.49C13.5199 34.31 13.6266 34.0366 13.6866 33.445C13.7483 32.8333 13.7499 32.0283 13.7499 30.8333V24.1666C13.7499 22.97 13.7499 22.1666 13.6866 21.555C13.6266 20.9633 13.5199 20.69 13.3983 20.51C13.2462 20.2824 13.0508 20.0871 12.8233 19.935C12.6433 19.8133 12.3699 19.7066 11.7783 19.6466C11.1666 19.585 10.3616 19.5833 9.16658 19.5833C7.96992 19.5833 7.16659 19.5833 6.55492 19.6466H6.55325ZM18.7499 31.6666C18.7499 31.3351 18.8816 31.0172 19.116 30.7828C19.3505 30.5483 19.6684 30.4166 19.9999 30.4166H28.3333C28.6648 30.4166 28.9827 30.5483 29.2171 30.7828C29.4516 31.0172 29.5833 31.3351 29.5833 31.6666C29.5833 31.9982 29.4516 32.3161 29.2171 32.5505C28.9827 32.785 28.6648 32.9166 28.3333 32.9166H19.9999C19.6684 32.9166 19.3505 32.785 19.116 32.5505C18.8816 32.3161 18.7499 31.9982 18.7499 31.6666Z" fill="#737D7D"/>
+                        </svg>                            
+                    </div>
+                    <div class="text">
+                        <h4>Мультискрин</h4>
+                        <p>Смотри на компьютере, SmartTV, IPad, телефоне, телевизоре</p>
+                    </div>
+                </div>
+                <div class="home-abaut__item animate__fadeInUp wow">
+                    <div class="icon">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_109_196)">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M10.8675 6.77624H6.77624V10.8675C6.77624 11.2357 6.62999 11.5888 6.36967 11.8491C6.10934 12.1094 5.75627 12.2557 5.38812 12.2557C5.01997 12.2557 4.66689 12.1094 4.40657 11.8491C4.14625 11.5888 4 11.2357 4 10.8675V7.21459C4 6.36203 4.33868 5.54438 4.94153 4.94153C5.54438 4.33868 6.36203 4 7.21459 4H10.8675C11.2357 4 11.5888 4.14625 11.8491 4.40657C12.1094 4.66689 12.2557 5.01997 12.2557 5.38812C12.2557 5.75627 12.1094 6.10934 11.8491 6.36967C11.5888 6.62999 11.2357 6.77624 10.8675 6.77624ZM6.77624 29.1323V33.2236H10.8675C11.2357 33.2236 11.5888 33.3698 11.8491 33.6301C12.1094 33.8905 12.2557 34.2435 12.2557 34.6117C12.2557 34.9798 12.1094 35.3329 11.8491 35.5932C11.5888 35.8536 11.2357 35.9998 10.8675 35.9998H7.21459C6.36203 35.9998 5.54439 35.6611 4.94153 35.0583C4.33868 34.4554 4 33.6378 4 32.7852V29.1323C4 28.7641 4.14625 28.411 4.40657 28.1507C4.66689 27.8904 5.01997 27.7441 5.38812 27.7441C5.75627 27.7441 6.10935 27.8904 6.36967 28.1507C6.62999 28.411 6.77624 28.7641 6.77624 29.1323ZM33.2236 10.8675V6.77624H29.1323C28.7641 6.77624 28.411 6.62999 28.1507 6.36967C27.8904 6.10935 27.7441 5.75627 27.7441 5.38812C27.7441 5.01997 27.8904 4.66689 28.1507 4.40657C28.411 4.14625 28.7641 4 29.1323 4H32.7852C33.6378 4 34.4554 4.33868 35.0583 4.94153C35.6611 5.54439 35.9998 6.36203 35.9998 7.21459V10.8675C35.9998 11.2357 35.8536 11.5888 35.5932 11.8491C35.3329 12.1094 34.9798 12.2557 34.6117 12.2557C34.2435 12.2557 33.8905 12.1094 33.6301 11.8491C33.3698 11.5888 33.2236 11.2357 33.2236 10.8675ZM29.1323 33.2236H33.2236V29.1323C33.2236 28.7641 33.3698 28.411 33.6301 28.1507C33.8905 27.8904 34.2435 27.7441 34.6117 27.7441C34.9798 27.7441 35.3329 27.8904 35.5932 28.1507C35.8536 28.411 35.9998 28.7641 35.9998 29.1323V32.7852C35.9998 33.6378 35.6611 34.4554 35.0583 35.0583C34.4554 35.6611 33.6378 35.9998 32.7852 35.9998H29.1323C28.7641 35.9998 28.411 35.8536 28.1507 35.5932C27.8904 35.3329 27.7441 34.9798 27.7441 34.6117C27.7441 34.2435 27.8904 33.8905 28.1507 33.6301C28.411 33.3698 28.7641 33.2236 29.1323 33.2236ZM18.2681 31.0209L16.5262 23.4718L8.97892 21.7298C8.69388 21.664 8.43694 21.5098 8.24477 21.2892C8.05259 21.0686 7.93502 20.7929 7.90885 20.5015C7.88268 20.2101 7.94925 19.9179 8.09905 19.6666C8.24885 19.4153 8.47426 19.2177 8.74301 19.1021L26.8245 11.3527C27.0795 11.2434 27.3614 11.2131 27.6338 11.2656C27.9062 11.318 28.1566 11.4509 28.3527 11.6471C28.5489 11.8432 28.6818 12.0936 28.7342 12.366C28.7867 12.6384 28.7564 12.9203 28.6471 13.1753L20.8974 31.2575C20.7821 31.5268 20.5845 31.7527 20.333 31.9029C20.0815 32.0531 19.7889 32.1199 19.4972 32.0937C19.2054 32.0675 18.9294 31.9497 18.7086 31.7571C18.4879 31.5645 18.3336 31.3064 18.2681 31.0209ZM13.741 19.9814L17.996 20.9621C18.2495 21.0208 18.4813 21.1495 18.6652 21.3336C18.849 21.5177 18.9775 21.75 19.0358 22.0036L20.0188 26.2599L24.7286 15.2711L13.741 19.9814Z" fill="#737D7D"/>
+                            </g>
+                            <defs>
+                            <clipPath id="clip0_109_196">
+                            <rect width="40" height="40" fill="white"/>
+                            </clipPath>
+                            </defs>
+                        </svg>                            
+                    </div>
+                    <div class="text">
+                        <h4>Управление </h4>
+                        <p>Ставь эфир на паузу, перематывай, смотри свои любимые повторы </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+			</main>
+			<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__left">
+			<div class="footer__abaut">
+				<a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+				<p>© 2023 Lamro.TV</p>
+			</div>
+			<div class="footer__flex">
+				<div class="footer__item">
+					<h4>Клиентам</h4>
+					<ul>
+						<li><a href="bring_friend.html">Приведи друга</a></li>
+						<li><a href="terms_sale.html">Условия продаж</a></li>
+						<li><a href="abaut.html"> О нас</a></li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h4>Возможности</h4>
+					<ul>
+						<li><a href="scope.html">Все возможности</a></li>
+						<li><a href="speed-test.html">Проверить скорость</a></li>
+					</ul>
+				</div>
+				<!-- <div class="footer__item">
+					<h4>Партнерам</h4>
+					<ul>
+						<li><a href="">Партнерская программа </a></li>
+					</ul>
+				</div> -->
+				<div class="footer__item">
+					<h4>Связь</h4>
+					<ul>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="contacts.html">Контакты </a></li>
+						<li><a href="faq.html">Вопрос-ответ</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__right">
+			<div class="footer__apps">
+				<a href="">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M22.0181 13.2979L18.0991 15.5159L14.5841 12.0229L18.1271 8.50194L22.0181 10.7039C22.2477 10.8338 22.4388 11.0223 22.5717 11.2502C22.7046 11.478 22.7747 11.7371 22.7747 12.0009C22.7747 12.2647 22.7046 12.5238 22.5717 12.7517C22.4388 12.9796 22.2477 13.1681 22.0181 13.2979ZM1.3371 0.923936C1.26289 1.1041 1.22483 1.29709 1.2251 1.49194V22.5089C1.2251 22.7259 1.2701 22.9279 1.3491 23.1089L12.5041 12.0219L1.3371 0.923936ZM13.5441 10.9889L16.8021 7.75094L3.4501 0.194936C3.16391 0.0304719 2.83059 -0.0325977 2.5041 0.0159364L13.5441 10.9889ZM13.5441 13.0559L2.5441 23.9889C2.8421 24.0249 3.1561 23.9729 3.4501 23.8059L16.7741 16.2659L13.5441 13.0559Z" fill="#737D7D"/>
+					</svg>						
+					Google Play
+				</a>
+				<a href="">
+					<svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.375 13.8265C18.3443 10.5418 21.1722 8.94379 21.3015 8.86939C19.7 6.62421 17.2176 6.31745 16.3453 6.29299C14.2604 6.08203 12.238 7.49253 11.176 7.49253C10.0928 7.49253 8.45728 6.31337 6.69462 6.34803C4.42637 6.38166 2.30439 7.64438 1.14059 9.60522C-1.26121 13.6033 0.530066 19.4787 2.83117 22.7104C3.98226 24.2931 5.32731 26.0603 7.08785 25.9982C8.81024 25.9299 9.45361 24.9423 11.5321 24.9423C13.5916 24.9423 14.1957 25.9982 15.9913 25.9584C17.8398 25.9299 19.0036 24.3686 20.1144 22.7716C21.4446 20.9575 21.9788 19.1709 22 19.0792C21.9565 19.0649 18.41 17.7635 18.375 13.8265Z" fill="#737D7D"/>
+						<path d="M14.9832 4.16729C15.9096 3.05336 16.5435 1.53789 16.3675 0C15.0267 0.0570722 13.3499 0.891753 12.3843 1.98122C11.53 2.94125 10.7668 4.51482 10.964 5.99462C12.4701 6.10264 14.0166 5.26389 14.9832 4.16729Z" fill="#737D7D"/>
+					</svg>
+					App Store						
+				</a>
+			</div>
+			<div class="footer__payments">
+				<span><img src="img/master card.2.svg" alt=""></span>
+				<span><img src="img/visa.2.svg" alt=""></span>
+				<span><img src="img/mircard.svg" alt=""></span>
+			</div>
+		</div>
+	</div>
+</footer>
+			<div class="modal" id="registr-modal">
+    <div class="modal__container">
+        <button class="clous-modal" onclick="showModal()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.451 15C14.3105 15 14.1702 14.9464 14.0628 14.8392L1.16092 1.93723C0.946361 1.7229 0.946361 1.37526 1.16092 1.16092C1.37525 0.946361 1.72311 0.946361 1.93722 1.16092L14.8391 14.0629C15.0536 14.2775 15.0536 14.6249 14.8391 14.8392C14.7319 14.9464 14.5916 15 14.451 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+                <path d="M1.54918 15C1.40863 15 1.26808 14.9464 1.16092 14.8392C0.946361 14.6247 0.946361 14.2773 1.16092 14.0629L14.0628 1.16092C14.2773 0.946361 14.6247 0.946361 14.8391 1.16092C15.0536 1.37526 15.0536 1.7229 14.8391 1.93723L1.93722 14.8392C1.83028 14.9464 1.68973 15 1.54918 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+            </svg>                
+        </button>
+        <div class="registr-modal">
+            <div class="registr-modal__title">
+                <h2>Регистрация</h2>
+                <p>Уже являетесь клиентом? 
+                    <button onclick="showModal('login-modal')"> Войти </button>
+                </p>
+            </div>
+            <form action="">
+                <label for="" class="input-text"> Ваше имя
+                    <input type="text" readonly onfocus="this.removeAttribute('readonly');" placeholder="">
+                </label>
+                <label for="" class="input-text" id="phone-container"> Номер телефона
+                    <input type="tel" id="new_user_phone" readonly onfocus="this.removeAttribute('readonly');" placeholder="">
+                </label>
+                <label for="" class="input-text" id="reg-email"> E-mail
+                    <input type="text" readonly onfocus="this.removeAttribute('readonly');" placeholder="E-mail">
+                </label>
+                <label for="" class="checkbox">
+                    <input type="checkbox" name="" id="email-checkbox">
+                    <span></span>
+                    <p>У меня нет email</p>
+                </label>
+                <label for="" class="input-btn">
+                    <input type="submit" value="Зарегистрироваться">
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+			<div class="modal" id="confirme-modal">
+    <div class="modal__container">
+        <button class="clous-modal" onclick="showModal()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.451 15C14.3105 15 14.1702 14.9464 14.0628 14.8392L1.16092 1.93723C0.946361 1.7229 0.946361 1.37526 1.16092 1.16092C1.37525 0.946361 1.72311 0.946361 1.93722 1.16092L14.8391 14.0629C15.0536 14.2775 15.0536 14.6249 14.8391 14.8392C14.7319 14.9464 14.5916 15 14.451 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+                <path d="M1.54918 15C1.40863 15 1.26808 14.9464 1.16092 14.8392C0.946361 14.6247 0.946361 14.2773 1.16092 14.0629L14.0628 1.16092C14.2773 0.946361 14.6247 0.946361 14.8391 1.16092C15.0536 1.37526 15.0536 1.7229 14.8391 1.93723L1.93722 14.8392C1.83028 14.9464 1.68973 15 1.54918 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+            </svg>                
+        </button>
+        <div class="confirme-modal">
+            <div class="confirme-modal__title">
+                <h2>Подтверждение телефона</h2>
+                <p>На номер +7 (960) 738-90-36 мы отправили код подтверждения. Введите его в поле ниже, чтобы завершить регистрацию. 
+                    <button onclick="showModal('registr-modal')"> Изменить данные </button>
+                </p>
+            </div>
+            <form action="" id="phone-verify">
+                <p class="form-title">Укажите код</p> 
+                <div class="flex">
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                </div>
+                <!-- error message  -->
+                <!-- <div class="code-error">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5601 16.3007L14.8901 3.58067C14.58 3.09549 14.1527 2.69619 13.6476 2.41961C13.1425 2.14302 12.5759 1.99805 12.0001 1.99805C11.4243 1.99805 10.8577 2.14302 10.3526 2.41961C9.84755 2.69619 9.42024 3.09549 9.1101 3.58067L1.4401 16.3007C1.16915 16.7523 1.02189 17.2674 1.01311 17.794C1.00434 18.3206 1.13436 18.8402 1.3901 19.3007C1.68578 19.8189 2.11376 20.2494 2.6303 20.5481C3.14684 20.8468 3.73343 21.0029 4.3301 21.0007H19.6701C20.2629 21.007 20.8468 20.8569 21.363 20.5654C21.8792 20.2739 22.3093 19.8515 22.6101 19.3407C22.8734 18.8754 23.0075 18.3483 22.9987 17.8139C22.9899 17.2794 22.8385 16.757 22.5601 16.3007ZM20.8601 18.3507C20.7399 18.5573 20.5655 18.727 20.3557 18.8416C20.146 18.9562 19.9089 19.0112 19.6701 19.0007H4.3301C4.09132 19.0112 3.85422 18.9562 3.64446 18.8416C3.4347 18.727 3.26029 18.5573 3.1401 18.3507C3.05233 18.1987 3.00613 18.0262 3.00613 17.8507C3.00613 17.6751 3.05233 17.5027 3.1401 17.3507L10.8201 4.62067C10.9581 4.43838 11.1365 4.29053 11.3412 4.18874C11.5459 4.08695 11.7715 4.03398 12.0001 4.03398C12.2287 4.03398 12.4543 4.08695 12.659 4.18874C12.8637 4.29053 13.0421 4.43838 13.1801 4.62067L20.8501 17.3407C20.9413 17.493 20.9902 17.6668 20.992 17.8443C20.9937 18.0218 20.9482 18.1966 20.8601 18.3507Z" fill="#F45356"/>
+                            <path d="M12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z" fill="#F45356"/>
+                            <path d="M12 8C11.7348 8 11.4804 8.10536 11.2929 8.29289C11.1054 8.48043 11 8.73478 11 9V13C11 13.2652 11.1054 13.5196 11.2929 13.7071C11.4804 13.8946 11.7348 14 12 14C12.2652 14 12.5196 13.8946 12.7071 13.7071C12.8946 13.5196 13 13.2652 13 13V9C13 8.73478 12.8946 8.48043 12.7071 8.29289C12.5196 8.10536 12.2652 8 12 8Z" fill="#F45356"/>
+                        </svg>                            
+                    </div>
+                    <div class="text">
+                        <p>Неверный код</p>
+                        <span>Пожалуйста, введите код, который Вы только что получили.</span>
+                    </div>
+                </div> -->
+                <label for="" class="input-btn">
+                    <input type="submit" value="Подтвердить">
+                </label>
+                <p>Код действителен ещё <span> 240 </span> секунд</p>
+            </form>
+        </div>
+    </div>
+</div>
+			<div class="modal" id="login-modal">
+    <div class="modal__container">
+        <button class="clous-modal" onclick="showModal()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.451 15C14.3105 15 14.1702 14.9464 14.0628 14.8392L1.16092 1.93723C0.946361 1.7229 0.946361 1.37526 1.16092 1.16092C1.37525 0.946361 1.72311 0.946361 1.93722 1.16092L14.8391 14.0629C15.0536 14.2775 15.0536 14.6249 14.8391 14.8392C14.7319 14.9464 14.5916 15 14.451 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+                <path d="M1.54918 15C1.40863 15 1.26808 14.9464 1.16092 14.8392C0.946361 14.6247 0.946361 14.2773 1.16092 14.0629L14.0628 1.16092C14.2773 0.946361 14.6247 0.946361 14.8391 1.16092C15.0536 1.37526 15.0536 1.7229 14.8391 1.93723L1.93722 14.8392C1.83028 14.9464 1.68973 15 1.54918 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+            </svg>                
+        </button>
+        <div class="login-modal">
+            <div class="login-modal__title">
+                <h2>Войти</h2>
+                <p>Ещё не учетной записи? 
+                    <button onclick="showModal('registr-modal')"> Создать </button>
+                </p>
+            </div>
+            <form action="">
+                <label for="" class="input-text"> Логин
+                    <input type="text" readonly onfocus="this.removeAttribute('readonly');"  placeholder="">
+                </label>
+                <label for="" class="input-text"> Пароль
+                    <input type="password" readonly onfocus="this.removeAttribute('readonly');" placeholder="">
+                </label>
+                <label for="" class="input-btn">
+                    <input type="submit" value="Войти">
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+			<div class="modal" id="successfully-modal">
+    <div class="modal__container">
+        <button class="clous-modal" onclick="showModal()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.451 15C14.3105 15 14.1702 14.9464 14.0628 14.8392L1.16092 1.93723C0.946361 1.7229 0.946361 1.37526 1.16092 1.16092C1.37525 0.946361 1.72311 0.946361 1.93722 1.16092L14.8391 14.0629C15.0536 14.2775 15.0536 14.6249 14.8391 14.8392C14.7319 14.9464 14.5916 15 14.451 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+                <path d="M1.54918 15C1.40863 15 1.26808 14.9464 1.16092 14.8392C0.946361 14.6247 0.946361 14.2773 1.16092 14.0629L14.0628 1.16092C14.2773 0.946361 14.6247 0.946361 14.8391 1.16092C15.0536 1.37526 15.0536 1.7229 14.8391 1.93723L1.93722 14.8392C1.83028 14.9464 1.68973 15 1.54918 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+            </svg>                
+        </button>
+        <div class="successfully-modal">
+            <div class="successfully-modal__title">
+                <h2>Регистрация завершена успешно!</h2>
+            </div>
+            <h4>Ваш аккаунт</h4>
+            <div class="successfully-modal__info">
+                <div class="successfully-modal__info-item">
+                    <p>Абонемент: 
+                        <span>33719</span>
+                    </p>
+                </div>
+                <div class="successfully-modal__info-item">
+                    <p>Пароль: 
+                        <span>951689</span>
+                    </p>
+                </div>
+                <p>Уже выполнен автоматический вход в систему. Вы можете оформить заказ на 
+                    <a href="">подключение тарифа</a>
+                </p>
+                <a href="" class="order-link">заказать сейчас</a>
+            </div>
+        </div>
+    </div>
+</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://wowjs.uk/dist/wow.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	</body>
+</html>

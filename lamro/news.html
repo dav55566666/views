@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+	<title>Главная</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/css/intlTelInput.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body id="body">
+		<div class="wrapper">
+			<header class="header" id="header">
+	<div class="header__container _container">
+		<a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+		<div class="header__right">
+			<div class="tv-series-btn">
+				<a href="/#convenient" class="allink"></a>
+				<div class="icon">
+					<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M4.26255 1.375C3.3691 1.375 2.51225 1.78062 1.88048 2.50264C1.24872 3.22465 0.893799 4.20392 0.893799 5.225V12.925C0.893799 13.9461 1.24872 14.9253 1.88048 15.6474C2.51225 16.3694 3.3691 16.775 4.26255 16.775H17.7375C18.631 16.775 19.4879 16.3694 20.1196 15.6474C20.7514 14.9253 21.1063 13.9461 21.1063 12.925V5.225C21.1063 4.20392 20.7514 3.22465 20.1196 2.50264C19.4879 1.78062 18.631 1.375 17.7375 1.375H4.26255ZM2.57817 5.225C2.57817 4.71446 2.75563 4.22483 3.07152 3.86382C3.3874 3.50281 3.81582 3.3 4.26255 3.3H17.7375C18.1843 3.3 18.6127 3.50281 18.9286 3.86382C19.2445 4.22483 19.4219 4.71446 19.4219 5.225V12.925C19.4219 13.4355 19.2445 13.9252 18.9286 14.2862C18.6127 14.6472 18.1843 14.85 17.7375 14.85H4.26255C3.81582 14.85 3.3874 14.6472 3.07152 14.2862C2.75563 13.9252 2.57817 13.4355 2.57817 12.925V5.225ZM5.10474 18.7C4.88137 18.7 4.66716 18.8014 4.50922 18.9819C4.35128 19.1624 4.26255 19.4072 4.26255 19.6625C4.26255 19.9178 4.35128 20.1626 4.50922 20.3431C4.66716 20.5236 4.88137 20.625 5.10474 20.625H16.8954C17.1187 20.625 17.3329 20.5236 17.4909 20.3431C17.6488 20.1626 17.7375 19.9178 17.7375 19.6625C17.7375 19.4072 17.6488 19.1624 17.4909 18.9819C17.3329 18.8014 17.1187 18.7 16.8954 18.7H5.10474Z"
+							fill="#737D7D" stroke="#737D7D" stroke-width="0.4" />
+					</svg>
+				</div>
+				<div class="hide">
+					<p>Узнайте, как установить наше <br>приложение на Smart TV</p>
+				</div>
+			</div>
+			<a href="tel:+32466900017" class="call-btn">
+				<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g clip-path="url(#clip0_109_432)">
+						<path
+							d="M16.2788 12.6416C16.236 12.621 14.6321 11.8312 14.3471 11.7286C14.2308 11.6869 14.1061 11.6461 13.9735 11.6461C13.757 11.6461 13.575 11.754 13.4333 11.966C13.2731 12.2041 12.7881 12.7711 12.6383 12.9404C12.6187 12.9628 12.592 12.9895 12.576 12.9895C12.5616 12.9895 12.3134 12.8873 12.2383 12.8546C10.5178 12.1073 9.21183 10.3101 9.03276 10.007C9.00719 9.96342 9.00612 9.94364 9.0059 9.94364C9.01219 9.92057 9.07005 9.86257 9.0999 9.83264C9.18726 9.74621 9.2819 9.63228 9.37348 9.52207C9.41683 9.46985 9.46026 9.41757 9.5029 9.36828C9.63576 9.21371 9.6949 9.09371 9.76347 8.95471L9.7994 8.88249C9.96683 8.54985 9.82383 8.26914 9.77762 8.17849C9.73969 8.10264 9.06247 6.46821 8.99047 6.29649C8.81733 5.88214 8.58855 5.68921 8.27062 5.68921C8.24112 5.68921 8.27062 5.68921 8.1469 5.69442C7.99626 5.70078 7.1759 5.80878 6.81319 6.03742C6.42855 6.27992 5.77783 7.05292 5.77783 8.41235C5.77783 9.63585 6.55426 10.7911 6.88762 11.2304C6.8959 11.2415 6.91112 11.264 6.93319 11.2963C8.20983 13.1607 9.80133 14.5424 11.4147 15.1869C12.9679 15.8074 13.7034 15.8791 14.1215 15.8791H14.1216C14.2973 15.8791 14.438 15.8653 14.562 15.8531L14.6408 15.8456C15.1773 15.798 16.3565 15.187 16.6247 14.4416C16.836 13.8546 16.8917 13.2131 16.7511 12.9804C16.6548 12.8221 16.4889 12.7424 16.2788 12.6416Z"
+							fill="#737D7D" />
+						<path
+							d="M11.1953 0C5.23698 0 0.389555 4.811 0.389555 10.7245C0.389555 12.6371 0.901412 14.5094 1.87105 16.1479L0.0151263 21.6226C-0.0194452 21.7246 0.00626912 21.8375 0.0817691 21.9144C0.136269 21.97 0.210198 22 0.285698 22C0.314626 22 0.343769 21.9956 0.372198 21.9866L6.08077 20.1726C7.64291 21.0072 9.40848 21.4478 11.1953 21.4478C17.1531 21.4479 22 16.6374 22 10.7245C22 4.811 17.1531 0 11.1953 0ZM11.1953 19.2139C9.51391 19.2139 7.88541 18.7284 6.48556 17.8098C6.43848 17.7789 6.38384 17.763 6.32884 17.763C6.29977 17.763 6.27063 17.7674 6.24227 17.7764L3.38263 18.6854L4.30577 15.9619C4.33563 15.8738 4.3207 15.7766 4.2657 15.7014C3.1997 14.2449 2.6362 12.5239 2.6362 10.7245C2.6362 6.04286 6.47577 2.234 11.1952 2.234C15.9141 2.234 19.7532 6.04286 19.7532 10.7245C19.7533 15.4056 15.9142 19.2139 11.1953 19.2139Z"
+							fill="#737D7D" />
+					</g>
+					<defs>
+						<clipPath id="clip0_109_432">
+							<rect width="22" height="22" fill="white" />
+						</clipPath>
+					</defs>
+				</svg>
+				+32 466 90 00 17
+			</a>
+			<!-- если пользователь нет -->
+			<button class="login-btn" onclick="showModal('login-modal')">ВОЙТИ</button>
+			<!-- если пользователь есть -->
+			<!-- <div class="header__user">
+				<div class="header__user-avatars">
+					<div class="avatars__item">
+						<button class="removeavatar">
+							<svg width="43" height="44" viewBox="0 0 43 44" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle cx="21.7034" cy="22" r="15" transform="rotate(-45 21.7034 22)"
+									fill="#071A1A" />
+								<path
+									d="M16.696 16.9928C16.3796 17.3092 16.3796 17.822 16.696 18.1384L20.5576 22L16.696 25.8616C16.3796 26.178 16.3796 26.6908 16.696 27.0072C17.0124 27.3236 17.5253 27.3236 17.8416 27.0072L21.7032 23.1456L25.5648 27.0072C25.8812 27.3236 26.394 27.3236 26.7104 27.0072C27.0268 26.6908 27.0268 26.1779 26.7104 25.8616L22.8488 22L26.7104 18.1384C27.0268 17.8221 27.0268 17.3092 26.7104 16.9928C26.394 16.6764 25.8812 16.6764 25.5648 16.9928L21.7032 20.8544L17.8416 16.9928C17.5253 16.6764 17.0124 16.6764 16.696 16.9928Z"
+									fill="#65AF69" stroke="#65AF69" stroke-width="0.1" />
+							</svg>
+						</button>
+						<button class="set-avatar">
+							<img src="img/avatar.png" alt="">
+							<span>Папочка</span>
+						</button>
+					</div>
+					<div class="avatars__item">
+						<button class="removeavatar">
+							<svg width="43" height="44" viewBox="0 0 43 44" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle cx="21.7034" cy="22" r="15" transform="rotate(-45 21.7034 22)"
+									fill="#071A1A" />
+								<path
+									d="M16.696 16.9928C16.3796 17.3092 16.3796 17.822 16.696 18.1384L20.5576 22L16.696 25.8616C16.3796 26.178 16.3796 26.6908 16.696 27.0072C17.0124 27.3236 17.5253 27.3236 17.8416 27.0072L21.7032 23.1456L25.5648 27.0072C25.8812 27.3236 26.394 27.3236 26.7104 27.0072C27.0268 26.6908 27.0268 26.1779 26.7104 25.8616L22.8488 22L26.7104 18.1384C27.0268 17.8221 27.0268 17.3092 26.7104 16.9928C26.394 16.6764 25.8812 16.6764 25.5648 16.9928L21.7032 20.8544L17.8416 16.9928C17.5253 16.6764 17.0124 16.6764 16.696 16.9928Z"
+									fill="#65AF69" stroke="#65AF69" stroke-width="0.1" />
+							</svg>
+						</button>
+						<button class="set-avatar">
+							<img src="img/805bd42aa6895fa7569aefdcf3a4b07d.png" alt="">
+							<span>Робот</span>
+						</button>
+					</div>
+					<div class="avatars__item">
+						<button class="removeavatar">
+							<svg width="43" height="44" viewBox="0 0 43 44" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle cx="21.7034" cy="22" r="15" transform="rotate(-45 21.7034 22)"
+									fill="#071A1A" />
+								<path
+									d="M16.696 16.9928C16.3796 17.3092 16.3796 17.822 16.696 18.1384L20.5576 22L16.696 25.8616C16.3796 26.178 16.3796 26.6908 16.696 27.0072C17.0124 27.3236 17.5253 27.3236 17.8416 27.0072L21.7032 23.1456L25.5648 27.0072C25.8812 27.3236 26.394 27.3236 26.7104 27.0072C27.0268 26.6908 27.0268 26.1779 26.7104 25.8616L22.8488 22L26.7104 18.1384C27.0268 17.8221 27.0268 17.3092 26.7104 16.9928C26.394 16.6764 25.8812 16.6764 25.5648 16.9928L21.7032 20.8544L17.8416 16.9928C17.5253 16.6764 17.0124 16.6764 16.696 16.9928Z"
+									fill="#65AF69" stroke="#65AF69" stroke-width="0.1" />
+							</svg>
+						</button>
+						<button class="set-avatar">
+							<img src="img/d29fd0cda74967441d002eaab30a2b96.png" alt="">
+							<span>A</span>
+						</button>
+					</div>
+					<div class="avatars__item">
+						<label for="" class="input-file">
+							<svg width="128" height="128" viewBox="0 0 128 128" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<circle cx="64" cy="64" r="64" fill="#071A1A" />
+								<path
+									d="M64 33.95C62.1812 33.95 60.707 35.4242 60.707 37.243V60.707H37.243C35.4242 60.707 33.95 62.1812 33.95 64C33.95 65.8188 35.4242 67.293 37.243 67.293H60.707V90.757C60.707 92.5758 62.1812 94.05 64 94.05C65.8188 94.05 67.293 92.5758 67.293 90.757V67.293H90.757C92.5758 67.293 94.05 65.8188 94.05 64C94.05 62.1812 92.5758 60.707 90.757 60.707H67.293V37.243C67.293 35.4242 65.8188 33.95 64 33.95Z"
+									fill="#65AF69" stroke="#65AF69" stroke-width="0.1" />
+							</svg>
+							<input type="file" name="" id="">
+							<span>Новый</span>
+						</label>
+					</div>
+				</div>
+				<button id="showusermenu" onclick="showUserMenu()">
+					<img src="img/avatar.png" alt="">
+					<svg width="10" height="6" viewBox="0 0 10 6" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.00293 1L5.00293 5L9.00293 1" stroke="white" stroke-width="1.6"
+							stroke-linecap="round" stroke-linejoin="round" />
+					</svg>
+				</button>
+				<div class="header__user-menu" id="user-menu">
+					<div class="header__user-info">
+						<p>Rasul</p>
+						<p>Логин:
+							<span>32105</span>
+						</p>
+					</div>
+					<button class="user-menu-btn">Изменить профиль</button>
+					<button class="user-menu-btn">Введите промо-код</button>
+					<a href="" class="user-menu-btn">Персональный аккаунт</a>
+					<a href="" class="user-menu-btn">Выйти</a>
+				</div>
+			</div> -->
+		</div>
+	</div>
+</header>
+
+<button class="up-btn" id="up-btn">
+	<svg width="64" height="65" viewBox="0 0 64 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path
+			d="M32 62.4374C48.5684 62.4374 62 49.0061 62 32.4374C62 15.8689 48.5684 2.43744 32 2.43744C15.4314 2.43744 2 15.8689 2 32.4374C2 49.0061 15.4314 62.4374 32 62.4374Z"
+			stroke="#6EB36B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+		<path
+			d="M20 36.7574L28.61 27.5777C29.0375 27.1025 29.5604 26.7224 30.1445 26.4623C30.7283 26.2022 31.3607 26.0675 32 26.0675C32.6393 26.0675 33.2717 26.2022 33.8555 26.4623C34.4396 26.7224 34.9625 27.1025 35.39 27.5777L44 36.7574"
+			stroke="#6EB36B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
+	</svg>
+</button>
+<div class="load-screen" id="load-screen"><span></span><span></span><span></span></div>
+			<main class="page">
+				<section class="news">
+    <div class="news__container _container">
+        <div class="news__title">
+            <h1>Новости</h1>
+            <p></p>
+        </div>
+        <div class="news__grid">
+            <div class="news__item">
+                <div class="news__item-img"><img src="img/image_8.jpeg" alt=""></div>
+                <span class="data">15.04.2021 10:38</span>
+                <h4>Apple TV на Lamro TV</h4>
+                <p>Хорошая новость! Теперь у клиентов Lamro TV есть возможность смотреть каналы через Apple TV. Вы можете установить <a href="https://apps.apple.com/app/id1551338539"> Lamro TV </a> приложение через AppStore на вашем Apple TV</p>
+            </div>
+            <div class="news__item">
+                <div class="news__item-img"><img src="img/image_8.jpeg" alt=""></div>
+                <span class="data">15.04.2021 10:38</span>
+                <h4>Apple TV на Lamro TV</h4>
+                <p>Хорошая новость! Теперь у клиентов Lamro TV есть возможность смотреть каналы через Apple TV. Вы можете установить <a href="https://apps.apple.com/app/id1551338539"> Lamro TV </a> приложение через AppStore на вашем Apple TV</p>
+            </div>
+            <div class="news__item">
+                <div class="news__item-img"><img src="img/image_8.jpeg" alt=""></div>
+                <span class="data">15.04.2021 10:38</span>
+                <h4>Apple TV на Lamro TV</h4>
+                <p>Хорошая новость! Теперь у клиентов Lamro TV есть возможность смотреть каналы через Apple TV. Вы можете установить <a href="https://apps.apple.com/app/id1551338539"> Lamro TV </a> приложение через AppStore на вашем Apple TV</p>
+            </div>
+            <div class="news__item">
+                <div class="news__item-img"><img src="img/image_8.jpeg" alt=""></div>
+                <span class="data">15.04.2021 10:38</span>
+                <h4>Apple TV на Lamro TV</h4>
+                <p>Хорошая новость! Теперь у клиентов Lamro TV есть возможность смотреть каналы через Apple TV. Вы можете установить <a href="https://apps.apple.com/app/id1551338539"> Lamro TV </a> приложение через AppStore на вашем Apple TV</p>
+            </div>
+            <div class="news__item">
+                <div class="news__item-img"><img src="img/image_8.jpeg" alt=""></div>
+                <span class="data">15.04.2021 10:38</span>
+                <h4>Apple TV на Lamro TV</h4>
+                <p>Хорошая новость! Теперь у клиентов Lamro TV есть возможность смотреть каналы через Apple TV. Вы можете установить <a href="https://apps.apple.com/app/id1551338539"> Lamro TV </a> приложение через AppStore на вашем Apple TV</p>
+            </div>
+            <div class="news__item">
+                <div class="news__item-img"><img src="img/image_8.jpeg" alt=""></div>
+                <span class="data">15.04.2021 10:38</span>
+                <h4>Apple TV на Lamro TV</h4>
+                <p>Хорошая новость! Теперь у клиентов Lamro TV есть возможность смотреть каналы через Apple TV. Вы можете установить <a href="https://apps.apple.com/app/id1551338539"> Lamro TV </a> приложение через AppStore на вашем Apple TV</p>
+            </div>
+            <div class="news__item">
+                <div class="news__item-img"><img src="img/image_8.jpeg" alt=""></div>
+                <span class="data">15.04.2021 10:38</span>
+                <h4>Apple TV на Lamro TV</h4>
+                <p>Хорошая новость! Теперь у клиентов Lamro TV есть возможность смотреть каналы через Apple TV. Вы можете установить <a href="https://apps.apple.com/app/id1551338539"> Lamro TV </a> приложение через AppStore на вашем Apple TV</p>
+            </div>
+            <div class="news__item">
+                <div class="news__item-img"><img src="img/image_8.jpeg" alt=""></div>
+                <span class="data">15.04.2021 10:38</span>
+                <h4>Apple TV на Lamro TV</h4>
+                <p>Хорошая новость! Теперь у клиентов Lamro TV есть возможность смотреть каналы через Apple TV. Вы можете установить <a href="https://apps.apple.com/app/id1551338539"> Lamro TV </a> приложение через AppStore на вашем Apple TV</p>
+            </div>
+            <div class="news__item">
+                <div class="news__item-img"><img src="img/image_8.jpeg" alt=""></div>
+                <span class="data">15.04.2021 10:38</span>
+                <h4>Apple TV на Lamro TV</h4>
+                <p>Хорошая новость! Теперь у клиентов Lamro TV есть возможность смотреть каналы через Apple TV. Вы можете установить <a href="https://apps.apple.com/app/id1551338539"> Lamro TV </a> приложение через AppStore на вашем Apple TV</p>
+            </div>
+            <div class="news__item">
+                <div class="news__item-img"><img src="img/image_8.jpeg" alt=""></div>
+                <span class="data">15.04.2021 10:38</span>
+                <h4>Apple TV на Lamro TV</h4>
+                <p>Хорошая новость! Теперь у клиентов Lamro TV есть возможность смотреть каналы через Apple TV. Вы можете установить <a href="https://apps.apple.com/app/id1551338539"> Lamro TV </a> приложение через AppStore на вашем Apple TV</p>
+            </div>
+        </div>
+    </div>
+</section>
+			</main>
+			<footer class="footer">
+	<div class="footer__container _container">
+		<div class="footer__left">
+			<div class="footer__abaut">
+				<a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+				<p>© 2023 Lamro.TV</p>
+			</div>
+			<div class="footer__flex">
+				<div class="footer__item">
+					<h4>Клиентам</h4>
+					<ul>
+						<li><a href="bring_friend.html">Приведи друга</a></li>
+						<li><a href="terms_sale.html">Условия продаж</a></li>
+						<li><a href="abaut.html"> О нас</a></li>
+					</ul>
+				</div>
+				<div class="footer__item">
+					<h4>Возможности</h4>
+					<ul>
+						<li><a href="scope.html">Все возможности</a></li>
+						<li><a href="speed-test.html">Проверить скорость</a></li>
+					</ul>
+				</div>
+				<!-- <div class="footer__item">
+					<h4>Партнерам</h4>
+					<ul>
+						<li><a href="">Партнерская программа </a></li>
+					</ul>
+				</div> -->
+				<div class="footer__item">
+					<h4>Связь</h4>
+					<ul>
+						<li><a href="news.html">Новости</a></li>
+						<li><a href="contacts.html">Контакты </a></li>
+						<li><a href="faq.html">Вопрос-ответ</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer__right">
+			<div class="footer__apps">
+				<a href="">
+					<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M22.0181 13.2979L18.0991 15.5159L14.5841 12.0229L18.1271 8.50194L22.0181 10.7039C22.2477 10.8338 22.4388 11.0223 22.5717 11.2502C22.7046 11.478 22.7747 11.7371 22.7747 12.0009C22.7747 12.2647 22.7046 12.5238 22.5717 12.7517C22.4388 12.9796 22.2477 13.1681 22.0181 13.2979ZM1.3371 0.923936C1.26289 1.1041 1.22483 1.29709 1.2251 1.49194V22.5089C1.2251 22.7259 1.2701 22.9279 1.3491 23.1089L12.5041 12.0219L1.3371 0.923936ZM13.5441 10.9889L16.8021 7.75094L3.4501 0.194936C3.16391 0.0304719 2.83059 -0.0325977 2.5041 0.0159364L13.5441 10.9889ZM13.5441 13.0559L2.5441 23.9889C2.8421 24.0249 3.1561 23.9729 3.4501 23.8059L16.7741 16.2659L13.5441 13.0559Z" fill="#737D7D"/>
+					</svg>						
+					Google Play
+				</a>
+				<a href="">
+					<svg width="22" height="26" viewBox="0 0 22 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.375 13.8265C18.3443 10.5418 21.1722 8.94379 21.3015 8.86939C19.7 6.62421 17.2176 6.31745 16.3453 6.29299C14.2604 6.08203 12.238 7.49253 11.176 7.49253C10.0928 7.49253 8.45728 6.31337 6.69462 6.34803C4.42637 6.38166 2.30439 7.64438 1.14059 9.60522C-1.26121 13.6033 0.530066 19.4787 2.83117 22.7104C3.98226 24.2931 5.32731 26.0603 7.08785 25.9982C8.81024 25.9299 9.45361 24.9423 11.5321 24.9423C13.5916 24.9423 14.1957 25.9982 15.9913 25.9584C17.8398 25.9299 19.0036 24.3686 20.1144 22.7716C21.4446 20.9575 21.9788 19.1709 22 19.0792C21.9565 19.0649 18.41 17.7635 18.375 13.8265Z" fill="#737D7D"/>
+						<path d="M14.9832 4.16729C15.9096 3.05336 16.5435 1.53789 16.3675 0C15.0267 0.0570722 13.3499 0.891753 12.3843 1.98122C11.53 2.94125 10.7668 4.51482 10.964 5.99462C12.4701 6.10264 14.0166 5.26389 14.9832 4.16729Z" fill="#737D7D"/>
+					</svg>
+					App Store						
+				</a>
+			</div>
+			<div class="footer__payments">
+				<span><img src="img/master card.2.svg" alt=""></span>
+				<span><img src="img/visa.2.svg" alt=""></span>
+				<span><img src="img/mircard.svg" alt=""></span>
+			</div>
+		</div>
+	</div>
+</footer>
+			<div class="modal" id="registr-modal">
+    <div class="modal__container">
+        <button class="clous-modal" onclick="showModal()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.451 15C14.3105 15 14.1702 14.9464 14.0628 14.8392L1.16092 1.93723C0.946361 1.7229 0.946361 1.37526 1.16092 1.16092C1.37525 0.946361 1.72311 0.946361 1.93722 1.16092L14.8391 14.0629C15.0536 14.2775 15.0536 14.6249 14.8391 14.8392C14.7319 14.9464 14.5916 15 14.451 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+                <path d="M1.54918 15C1.40863 15 1.26808 14.9464 1.16092 14.8392C0.946361 14.6247 0.946361 14.2773 1.16092 14.0629L14.0628 1.16092C14.2773 0.946361 14.6247 0.946361 14.8391 1.16092C15.0536 1.37526 15.0536 1.7229 14.8391 1.93723L1.93722 14.8392C1.83028 14.9464 1.68973 15 1.54918 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+            </svg>                
+        </button>
+        <div class="registr-modal">
+            <div class="registr-modal__title">
+                <h2>Регистрация</h2>
+                <p>Уже являетесь клиентом? 
+                    <button onclick="showModal('login-modal')"> Войти </button>
+                </p>
+            </div>
+            <form action="">
+                <label for="" class="input-text"> Ваше имя
+                    <input type="text" readonly onfocus="this.removeAttribute('readonly');" placeholder="">
+                </label>
+                <label for="" class="input-text" id="phone-container"> Номер телефона
+                    <input type="tel" id="new_user_phone" readonly onfocus="this.removeAttribute('readonly');" placeholder="">
+                </label>
+                <label for="" class="input-text" id="reg-email"> E-mail
+                    <input type="text" readonly onfocus="this.removeAttribute('readonly');" placeholder="E-mail">
+                </label>
+                <label for="" class="checkbox">
+                    <input type="checkbox" name="" id="email-checkbox">
+                    <span></span>
+                    <p>У меня нет email</p>
+                </label>
+                <label for="" class="input-btn">
+                    <input type="submit" value="Зарегистрироваться">
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+			<div class="modal" id="confirme-modal">
+    <div class="modal__container">
+        <button class="clous-modal" onclick="showModal()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.451 15C14.3105 15 14.1702 14.9464 14.0628 14.8392L1.16092 1.93723C0.946361 1.7229 0.946361 1.37526 1.16092 1.16092C1.37525 0.946361 1.72311 0.946361 1.93722 1.16092L14.8391 14.0629C15.0536 14.2775 15.0536 14.6249 14.8391 14.8392C14.7319 14.9464 14.5916 15 14.451 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+                <path d="M1.54918 15C1.40863 15 1.26808 14.9464 1.16092 14.8392C0.946361 14.6247 0.946361 14.2773 1.16092 14.0629L14.0628 1.16092C14.2773 0.946361 14.6247 0.946361 14.8391 1.16092C15.0536 1.37526 15.0536 1.7229 14.8391 1.93723L1.93722 14.8392C1.83028 14.9464 1.68973 15 1.54918 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+            </svg>                
+        </button>
+        <div class="confirme-modal">
+            <div class="confirme-modal__title">
+                <h2>Подтверждение телефона</h2>
+                <p>На номер +7 (960) 738-90-36 мы отправили код подтверждения. Введите его в поле ниже, чтобы завершить регистрацию. 
+                    <button onclick="showModal('registr-modal')"> Изменить данные </button>
+                </p>
+            </div>
+            <form action="" id="phone-verify">
+                <p class="form-title">Укажите код</p> 
+                <div class="flex">
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                    <label for="" class="input-text">
+                        <input type="text" placeholder=" " readonly onfocus="this.removeAttribute('readonly');" class="code-input"> 
+                    </label>
+                </div>
+                <!-- error message  -->
+                <!-- <div class="code-error">
+                    <div class="icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22.5601 16.3007L14.8901 3.58067C14.58 3.09549 14.1527 2.69619 13.6476 2.41961C13.1425 2.14302 12.5759 1.99805 12.0001 1.99805C11.4243 1.99805 10.8577 2.14302 10.3526 2.41961C9.84755 2.69619 9.42024 3.09549 9.1101 3.58067L1.4401 16.3007C1.16915 16.7523 1.02189 17.2674 1.01311 17.794C1.00434 18.3206 1.13436 18.8402 1.3901 19.3007C1.68578 19.8189 2.11376 20.2494 2.6303 20.5481C3.14684 20.8468 3.73343 21.0029 4.3301 21.0007H19.6701C20.2629 21.007 20.8468 20.8569 21.363 20.5654C21.8792 20.2739 22.3093 19.8515 22.6101 19.3407C22.8734 18.8754 23.0075 18.3483 22.9987 17.8139C22.9899 17.2794 22.8385 16.757 22.5601 16.3007ZM20.8601 18.3507C20.7399 18.5573 20.5655 18.727 20.3557 18.8416C20.146 18.9562 19.9089 19.0112 19.6701 19.0007H4.3301C4.09132 19.0112 3.85422 18.9562 3.64446 18.8416C3.4347 18.727 3.26029 18.5573 3.1401 18.3507C3.05233 18.1987 3.00613 18.0262 3.00613 17.8507C3.00613 17.6751 3.05233 17.5027 3.1401 17.3507L10.8201 4.62067C10.9581 4.43838 11.1365 4.29053 11.3412 4.18874C11.5459 4.08695 11.7715 4.03398 12.0001 4.03398C12.2287 4.03398 12.4543 4.08695 12.659 4.18874C12.8637 4.29053 13.0421 4.43838 13.1801 4.62067L20.8501 17.3407C20.9413 17.493 20.9902 17.6668 20.992 17.8443C20.9937 18.0218 20.9482 18.1966 20.8601 18.3507Z" fill="#F45356"/>
+                            <path d="M12 17C12.5523 17 13 16.5523 13 16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16C11 16.5523 11.4477 17 12 17Z" fill="#F45356"/>
+                            <path d="M12 8C11.7348 8 11.4804 8.10536 11.2929 8.29289C11.1054 8.48043 11 8.73478 11 9V13C11 13.2652 11.1054 13.5196 11.2929 13.7071C11.4804 13.8946 11.7348 14 12 14C12.2652 14 12.5196 13.8946 12.7071 13.7071C12.8946 13.5196 13 13.2652 13 13V9C13 8.73478 12.8946 8.48043 12.7071 8.29289C12.5196 8.10536 12.2652 8 12 8Z" fill="#F45356"/>
+                        </svg>                            
+                    </div>
+                    <div class="text">
+                        <p>Неверный код</p>
+                        <span>Пожалуйста, введите код, который Вы только что получили.</span>
+                    </div>
+                </div> -->
+                <label for="" class="input-btn">
+                    <input type="submit" value="Подтвердить">
+                </label>
+                <p>Код действителен ещё <span> 240 </span> секунд</p>
+            </form>
+        </div>
+    </div>
+</div>
+			<div class="modal" id="login-modal">
+    <div class="modal__container">
+        <button class="clous-modal" onclick="showModal()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.451 15C14.3105 15 14.1702 14.9464 14.0628 14.8392L1.16092 1.93723C0.946361 1.7229 0.946361 1.37526 1.16092 1.16092C1.37525 0.946361 1.72311 0.946361 1.93722 1.16092L14.8391 14.0629C15.0536 14.2775 15.0536 14.6249 14.8391 14.8392C14.7319 14.9464 14.5916 15 14.451 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+                <path d="M1.54918 15C1.40863 15 1.26808 14.9464 1.16092 14.8392C0.946361 14.6247 0.946361 14.2773 1.16092 14.0629L14.0628 1.16092C14.2773 0.946361 14.6247 0.946361 14.8391 1.16092C15.0536 1.37526 15.0536 1.7229 14.8391 1.93723L1.93722 14.8392C1.83028 14.9464 1.68973 15 1.54918 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+            </svg>                
+        </button>
+        <div class="login-modal">
+            <div class="login-modal__title">
+                <h2>Войти</h2>
+                <p>Ещё не учетной записи? 
+                    <button onclick="showModal('registr-modal')"> Создать </button>
+                </p>
+            </div>
+            <form action="">
+                <label for="" class="input-text"> Логин
+                    <input type="text" readonly onfocus="this.removeAttribute('readonly');"  placeholder="">
+                </label>
+                <label for="" class="input-text"> Пароль
+                    <input type="password" readonly onfocus="this.removeAttribute('readonly');" placeholder="">
+                </label>
+                <label for="" class="input-btn">
+                    <input type="submit" value="Войти">
+                </label>
+            </form>
+        </div>
+    </div>
+</div>
+			<div class="modal" id="successfully-modal">
+    <div class="modal__container">
+        <button class="clous-modal" onclick="showModal()">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.451 15C14.3105 15 14.1702 14.9464 14.0628 14.8392L1.16092 1.93723C0.946361 1.7229 0.946361 1.37526 1.16092 1.16092C1.37525 0.946361 1.72311 0.946361 1.93722 1.16092L14.8391 14.0629C15.0536 14.2775 15.0536 14.6249 14.8391 14.8392C14.7319 14.9464 14.5916 15 14.451 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+                <path d="M1.54918 15C1.40863 15 1.26808 14.9464 1.16092 14.8392C0.946361 14.6247 0.946361 14.2773 1.16092 14.0629L14.0628 1.16092C14.2773 0.946361 14.6247 0.946361 14.8391 1.16092C15.0536 1.37526 15.0536 1.7229 14.8391 1.93723L1.93722 14.8392C1.83028 14.9464 1.68973 15 1.54918 15Z" fill="#475454" stroke="#475454" stroke-width="0.5"/>
+            </svg>                
+        </button>
+        <div class="successfully-modal">
+            <div class="successfully-modal__title">
+                <h2>Регистрация завершена успешно!</h2>
+            </div>
+            <h4>Ваш аккаунт</h4>
+            <div class="successfully-modal__info">
+                <div class="successfully-modal__info-item">
+                    <p>Абонемент: 
+                        <span>33719</span>
+                    </p>
+                </div>
+                <div class="successfully-modal__info-item">
+                    <p>Пароль: 
+                        <span>951689</span>
+                    </p>
+                </div>
+                <p>Уже выполнен автоматический вход в систему. Вы можете оформить заказ на 
+                    <a href="">подключение тарифа</a>
+                </p>
+                <a href="" class="order-link">заказать сейчас</a>
+            </div>
+        </div>
+    </div>
+</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+<script src="https://wowjs.uk/dist/wow.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.1.1/build/js/intlTelInput.min.js"></script>
+<script src="js/vendors.min.js"></script>
+<script src="js/app.min.js"></script>
+	</body>
+</html>
