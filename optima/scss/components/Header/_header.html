@@ -1,0 +1,112 @@
+<header class="header" id="header">
+	<div class="header__top">
+		<div class="header__container _container">
+			<ul>
+				<li><a href="services.html">Сферы деятельности</a></li>
+				<li><a href="">Каталог</a></li>
+				<li><a href="">Заказ и оплата</a></li>
+				<li><a href="">Доставка</a></li>
+				<li><a href="">Контакты</a></li>
+			</ul>
+			<div class="header__contacts">
+				<a href="tel:+74951362206">+7 (495) 136-2206 </a>
+				<a href="mailto:info@optimapc.ru">info@optimapc.ru</a>
+			</div>
+		</div>
+	</div>
+	<div class="header__bottom">
+		<div class="header__container _container">
+			<a href="/" class="logo"><img src="img/logo.svg" alt=""></a>
+			<div class="header__right">
+				<button class="callbackbtn" onclick="toggleDropwDown('callback-modal')">Оставить заявку</button>
+				<form action="search.html" class="search-form">
+					<label for="" class="input-text"><input type="text" placeholder="Искать товар"></label>
+					<label for="" class="input-btn">
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<circle cx="7.11111" cy="7.11111" r="6.61111" stroke="#5B5D5C"/>
+							<path d="M16.0001 16.0001L11.5557 11.5557" stroke="#5B5D5C"/>
+						</svg>							
+						<input type="submit" value="">
+					</label>
+				</form>
+				<div class="header__buttons">
+					<a href="tel:">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#333333"/>
+							<path d="M24.5801 22.8955L30.0002 23.823V29.9358C16.8244 30.7993 9.57112 22.8955 10.0199 10H16.1463L17.9094 15.4078L14.5741 18.7357C16.1794 21.885 18.1824 24.3402 21.3388 25.9419L24.5801 22.8955Z" fill="white" stroke="#333333"/>
+						</svg>							
+					</a>
+					<a href="mailto:">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#333333"/>
+							<path d="M9 11.5H8.5V12V28V28.5H9H31H31.5V28V12V11.5H31H9Z" fill="white" stroke="#333333"/>
+							<path d="M9 12L19.4118 19.5722C19.7625 19.8273 20.2375 19.8273 20.5882 19.5722L31 12" stroke="#333333"/>
+						</svg>							
+					</a>
+					<button class="burgerbtn" onclick="toggleDropwDown('header-dropdown')">
+						<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<rect x="0.5" y="0.5" width="39" height="39" rx="4.5" fill="white"/>
+							<rect x="0.5" y="0.5" width="39" height="39" rx="4.5" stroke="#333333"/>
+							<path d="M9 14H31" stroke="#333333"/>
+							<path d="M9 20H31" stroke="#333333"/>
+							<path d="M9 26H31" stroke="#333333"/>
+						</svg>							
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="header-dropdown dropdown" id="header-dropdown">
+    <div class="header-dropdown__container _container">
+        <div class="header-dropdown__grid">
+            <div class="header-dropdown__item">
+                <h3>OOO «Оптима»</h3>
+                <a href="tel:+74951362206">Телефон:
+                    <span>+7 (495) 136-2206 </span>
+                </a>
+                <a href="mailto:info@optimapc.ru">E-mail:
+                    <span>info@optimapc.ru</span>
+                </a>
+                <a href="">Адрес:
+                    <span>129626, город Москва, Мытищинский проезд, дом 6</span>
+                </a>
+            </div>
+            <div class="header-dropdown__item">
+                <h4>Курс валют</h4>
+                <div class="valutes">
+                    <p>1 USD = 90.63 RUB</p>
+                    <p>1 EUR = 99.13 RUB</p>
+                    <p>1 CNY = 12.59 RUB</p>
+                </div>
+            </div>
+        </div>
+        <div class="header-dropdown__grid">
+            <div class="header-dropdown__item">
+                <h4>Каталог</h4>
+                <ul>
+                    <li><a href="">Модульное оборудование (Устройства на DIN-рейку)</a></li>
+                    <li><a href="">Комплексная поставка оборудования</a></li>
+                    <li><a href="">Сборка электрощитов</a></li>
+                    <li><a href="">Электромонтажные работы</a></li>
+                    <li><a href="">Монтаж систем водоснабжения, отопления и канализации</a></li>
+                </ul>
+            </div>
+            <div class="header-dropdown__item">
+                <h4>О нас</h4>
+                <ul>
+                    <li><a href="/">Главная</a></li>
+                    <li><a href="services.html">Сферы деятельности</a></li>
+                    <li><a href="">Каталог</a></li>
+                    <li><a href="">Заказ и оплата</a></li>
+                    <li><a href="">Доставка</a></li>
+                    <li><a href="">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="header-dropdown__contacts">
+            <h4>Схема проезда</h4>
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.645321%2C55.795687&mode=whatshere&whatshere%5Bpoint%5D=37.645321%2C55.795686&whatshere%5Bzoom%5D=17&z=17"></iframe>
+        </div>
+    </div>
+</div>
+</header>
