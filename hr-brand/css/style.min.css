@@ -1012,6 +1012,9 @@ footer .footer__container a {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  color: #FFF;
+}
+.registration .registration__container .registration__form .flex .input-text input::placeholder {
   color: rgba(251, 251, 243, 0.3);
 }
 .registration .registration__container .registration__form .flex .input-text .select__title {
@@ -1028,7 +1031,7 @@ footer .footer__container a {
   align-items: center;
 }
 .registration .registration__container .registration__form .flex .input-text .select__value span {
-  color: rgba(251, 251, 243, 0.3);
+  color: #FFF;
   font-family: "CoFo Gothic Trial";
   font-size: 18px;
   font-style: normal;
