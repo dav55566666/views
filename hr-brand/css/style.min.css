@@ -835,6 +835,15 @@ footer .footer__container a {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+
+.main video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
 }
 @media (max-width: 768px) {
   .main {
@@ -843,6 +852,8 @@ footer .footer__container a {
 }
 .main .main__container {
   max-width: 576px;
+  position: relative;
+  z-index: 2;
 }
 @media (max-width: 768px) {
   .main .main__container {
