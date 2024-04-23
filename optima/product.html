@@ -157,7 +157,7 @@
                     </p>
                 </div>
             </div>
-            <a href="" class="buy-btn">Сделать заказ</a>
+            <button class="buy-btn" onclick="toggleDropwDown('callback-modal')">Сделать заказ</button>
         </div>
         <div class="product-detail__characteristics">
             <h2>Характеристики</h2>
@@ -314,7 +314,7 @@
 		<div class="callback-modal dropdown" id="callback-modal">
     <div class="callback-modal__container _container">
         <div class="callback-modal__title">
-            <h2>Подбор товара</h2>
+            <h2>Оставить заявку</h2>
             <button class="clous-modal" onclick="clousDropDowns()">
                 <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect x="0.5" y="0.5" width="39" height="39" rx="4.5" fill="#FF9900"/>
@@ -340,11 +340,11 @@
                         <p>Согласие на обработку данных</p>
                     </label>
                     <label for="" class="input-text">Комментарий <textarea name="" id="" cols="30" rows="10" placeholder="Задайте интересующий вопрос"></textarea> </label>
+                    <label for="" class="input-file">
+                        <input type="file" name="" id="">
+                        <span>Прикрепить файл</span>
+                    </label>
                 </div>
-                <label for="" class="input-file">
-                    <input type="file" name="" id="">
-                    <span>Прикрепить файл</span>
-                </label>
                 <label for="" class="input-btn"><input type="submit" value="Заказать"></label>
             </form>
         </div>
