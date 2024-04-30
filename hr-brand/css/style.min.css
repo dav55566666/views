@@ -803,24 +803,8 @@ footer .footer__container a {
   display: block;
 }
 @media (max-width: 768px) {
-  footer .footer__container a:first-child {
-    max-width: 46px;
-  }
-  footer .footer__container a:nth-child(2) {
-    max-width: 52px;
-  }
-  footer .footer__container a:nth-child(3) {
-    max-width: 30px;
-  }
-  footer .footer__container a:nth-child(4) {
-    max-width: 36px;
-  }
-  footer .footer__container a:nth-child(5) {
-    max-width: 36px;
-  }
-  footer .footer__container a img {
-    width: 100%;
-    height: auto;
+  footer .footer__container {
+    flex-wrap: wrap;
   }
 }
 
@@ -861,59 +845,11 @@ footer .footer__container a {
   }
 }
 .main .main__container h1 {
-  color: var(--HR-Champagne-Gold, #CCBF89);
-  width: 100%;
-  font-family: "Karloff Positive Pro";
-  font-size: 162px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 48px;
-  /* 29.63% */
-  letter-spacing: -4.86px;
-  text-align: right;
   margin-bottom: 30px;
 }
-@media (max-width: 768px) {
-  .main .main__container h1 {
-    font-size: 74px;
-    line-height: 22px;
-    max-width: 266px;
-    margin: 0 auto 14px;
-  }
-}
-.main .main__container h1 span {
-  display: block;
-  margin-bottom: 46px;
-}
-@media (max-width: 768px) {
-  .main .main__container h1 span {
-    margin-bottom: 22px;
-  }
-}
-.main .main__container h1 span:first-child {
-  margin-right: 68px;
-}
-@media (max-width: 768px) {
-  .main .main__container h1 span:first-child {
-    margin-right: 40px;
-  }
-}
-.main .main__container h1 span:nth-child(2) {
-  text-align: left;
-  margin-bottom: 0;
-}
-.main .main__container h1 span:last-child {
-  margin-bottom: 0;
-  line-height: 162.009px;
-  text-align: right;
-  margin-top: -20px;
-  font-variant-numeric: oldstyle-nums proportional-nums;
-}
-@media (max-width: 768px) {
-  .main .main__container h1 span:last-child {
-    line-height: 74px;
-    margin: 0;
-  }
+.main .main__container h1 svg {
+  width: 100%;
+  height: auto;
 }
 .main .main__container p {
   color: var(--HR-Champagne-Gold, #CCBF89);
@@ -951,9 +887,13 @@ footer .footer__container a {
   font-style: normal;
   font-weight: 400;
   line-height: 130%;
-  /* 31.2px */
   letter-spacing: 0.24px;
   margin: 0 auto;
+  transition: all 0.5s;
+}
+
+.main .main__container a:hover {
+  box-shadow: 0 0 15px rgba(255,255,255,.6);
 }
 @media (max-width: 768px) {
   .main .main__container a {

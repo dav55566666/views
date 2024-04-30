@@ -3145,6 +3145,25 @@ body.ie ._ibg img {
 .product-item p span {
   font-weight: 400;
 }
+.product-item .brand {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  color: var(--Black, #333);
+  font-family: "PT Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--Orange-Light, #F90);
+}
+.product-item .brand span {
+  font-weight: 400;
+}
 .product-item .buy-btn {
   width: 100%;
   height: 50px;
@@ -3849,11 +3868,20 @@ body.ie ._ibg img {
     font-size: 28px;
   }
 }
-.recomended .recomended__container .recomended__swiper {
-  z-index: 0;
-}
-.recomended .recomended__container .recomended__swiper .swiper-wrapper .swiper-slide {
+.recomended .recomended__container .recomended__grid {
   width: 100%;
-  max-width: 306px;
-  margin-right: 16px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+}
+@media (max-width: 768px) {
+  .recomended .recomended__container .recomended__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px 16px;
+  }
+}
+@media (max-width: 520px) {
+  .recomended .recomended__container .recomended__grid {
+    grid-template-columns: 1fr;
+  }
 }
