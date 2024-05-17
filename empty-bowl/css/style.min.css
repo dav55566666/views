@@ -1126,7 +1126,6 @@ body.ie ._ibg img {
   width: 100%;
   position: absolute;
   left: 0;
-  z-index: 5;
   top: 150px;
   display: flex;
   justify-content: space-between;
@@ -1135,6 +1134,8 @@ body.ie ._ibg img {
 .main .main__container .main__anim .main__anim-title svg:nth-child(2) {
   margin-top: 40px;
   display: block;
+  position: relative;
+  z-index: 5;
 }
 .main .main__container .main__anim img {
   width: 100%;
