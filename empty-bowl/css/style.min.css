@@ -781,6 +781,8 @@ body.ie ._ibg img {
 .header {
   width: 100%;
   padding: 24px 20px;
+  position: relative;
+  z-index: 9999;
 }
 .header .header__container {
   display: flex;
@@ -815,23 +817,41 @@ body.ie ._ibg img {
 .header .header__container .header__left .menu li {
   position: relative;
 }
-.header .header__container .header__left .menu li a, .header .header__container .header__left .menu li span {
-  color: var(---White-grey, #EFEFEA);
+.header .header__container .header__left .menu li a,
+.header .header__container .header__left .menu li span {
+  color: var(--White-grey, #EFEFEA);
   font-family: Mulish;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: 100%;
+  transition: color 0.5s ease-in-out;
+  transition-delay: 0s;
 }
 .header .header__container .header__left .menu li ul {
   position: absolute;
   right: 0;
-  top: 30px;
-  padding: 20px;
-  border-radius: 5px;
-  background: #EBD8CF;
-  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+  top: 0px;
+  padding: 0px;
+  z-index: 9999;
   display: none;
+  box-shadow: 0px 4px 40px 0px rgba(0, 0, 0, 0.25);
+  transition: opacity 0.5s ease-in-out;
+  transition-delay: 0s;
+  padding-top: 30px;
+  opacity: 0;
+}
+.header .header__container .header__left .menu li ul li {
+  background: #EBD8CF;
+  padding: 0 20px;
+}
+.header .header__container .header__left .menu li ul li:first-child {
+  border-radius: 5px 5px 0 0;
+  padding: 20px 20px 0;
+}
+.header .header__container .header__left .menu li ul li:last-child {
+  border-radius: 0 0 5px 5px;
+  padding: 0 20px 20px;
 }
 .header .header__container .header__left .menu li ul li a {
   color: #000;
@@ -844,8 +864,10 @@ body.ie ._ibg img {
   letter-spacing: -0.32px;
   white-space: nowrap;
 }
-.header .header__container .header__left .menu li span:hover ~ ul {
+.header .header__container .header__left .menu li:hover ul {
   display: block;
+  opacity: 1;
+  transition-delay: 0.5s;
 }
 .header .header__container .header__right {
   width: 100%;
@@ -1134,12 +1156,13 @@ body.ie ._ibg img {
 .main .main__container .main__anim .main__anim-title svg:nth-child(2) {
   margin-top: 40px;
   display: block;
-  position: relative;
   z-index: 5;
+  position: relative;
 }
 .main .main__container .main__anim img {
   width: 100%;
-  max-width: 640px;
+  max-width: 750px;
+  right: 42px;
   display: block;
   margin: 0 auto;
   position: relative;
@@ -1212,7 +1235,7 @@ body.ie ._ibg img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 0;
+  bottom: -14px;
   z-index: 2;
 }
 .main .main__container .main__text p {
@@ -1221,11 +1244,11 @@ body.ie ._ibg img {
   font-family: Mulish;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 130%;
   /* 26px */
   letter-spacing: -0.4px;
-  max-width: 340px;
+  max-width: 338px;
   margin: 0 auto 30px;
 }
 .main .main__container .main__text a {
@@ -1237,7 +1260,7 @@ body.ie ._ibg img {
   max-width: 286px;
   height: 64px;
   border-radius: 5px;
-  border: 1px solid #FFF;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   background: radial-gradient(230.39% 104.71% at 0% 106.25%, rgba(211, 131, 73, 0.2) 0%, rgba(255, 254, 253, 0.2) 100%), linear-gradient(95deg, #FCDFCA 0.01%, #F8C9A8 100.47%);
   box-shadow: 0px 10px 20px 0px rgba(26, 20, 16, 0.15);
   color: var(---Black, #1A1410);
@@ -1257,6 +1280,7 @@ body.ie ._ibg img {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  opacity: 0.5;
   line-height: 130%;
   /* 18.2px */
   letter-spacing: -0.28px;
@@ -1320,7 +1344,7 @@ body.ie ._ibg img {
   font-family: Mulish;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 145%;
   letter-spacing: -0.4px;
   margin-bottom: 20px;
@@ -1362,7 +1386,7 @@ body.ie ._ibg img {
   font-family: Mulish;
   font-size: 24px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 100%;
   /* 24px */
   margin-bottom: 20px;
@@ -1374,7 +1398,7 @@ body.ie ._ibg img {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 10px 34px;
+  gap: 10px 60px;
   margin-bottom: 20px;
   position: relative;
   z-index: 2;
@@ -1388,7 +1412,7 @@ body.ie ._ibg img {
   font-family: Mulish;
   font-size: 24px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 100%;
   /* 24px */
   letter-spacing: -0.48px;
@@ -1398,7 +1422,7 @@ body.ie ._ibg img {
   font-family: Mulish;
   font-size: 20px;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 130%;
   /* 26px */
   letter-spacing: -0.4px;
@@ -1441,7 +1465,7 @@ body.ie ._ibg img {
   max-width: 604px;
   width: 100%;
   transform: rotate(25deg);
-  right: -120px;
+  right: -248px;
 }
 .author .bg-color {
   position: absolute;
@@ -1821,8 +1845,7 @@ body.ie ._ibg img {
   /* 29px */
   letter-spacing: -0.4px;
 }
-.seminar-about .seminar-about__container .seminar-about__right ul li::before {
-  content: "";
+.seminar-about .seminar-about__container .seminar-about__right ul li svg {
   width: 20px;
   height: 20px;
   position: absolute;
