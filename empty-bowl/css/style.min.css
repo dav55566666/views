@@ -2841,10 +2841,12 @@ body.ie ._ibg img {
 
 .how-to {
   width: 100%;
+  padding: 80px 20px;
 }
-.how-to .how-to__container {
-  margin-top: 80px;
-  margin-bottom: 80px;
+@media (max-width: 768px) {
+  .how-to .how-to__container {
+    max-width: 440px;
+  }
 }
 .how-to .how-to__container h1 {
   margin: 0 auto;
@@ -2858,6 +2860,16 @@ body.ie ._ibg img {
   text-align: center;
   margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+  .how-to .how-to__container h1 {
+    font-size: 42px;
+  }
+}
+@media (max-width: 520px) {
+  .how-to .how-to__container h1 {
+    font-size: 30px;
+  }
+}
 .how-to .how-to__container .how-to__banner {
   display: flex;
   justify-content: center;
@@ -2866,12 +2878,18 @@ body.ie ._ibg img {
 }
 .how-to .how-to__container .how-to__banner img {
   max-width: 720px;
+  width: 100%;
 }
 .how-to .how-to__container .how-to__title {
   margin-top: 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .how-to .how-to__container .how-to__title {
+    margin-top: 100px;
+  }
 }
 .how-to .how-to__container .how-to__title h4 {
   margin-top: 20px;
@@ -2931,6 +2949,11 @@ body.ie ._ibg img {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media (max-width: 768px) {
+  .how-to .how-to__container .how-to__item h2 {
+    font-size: 28px;
+  }
+}
 .how-to .how-to__container .how-to__item p {
   color: var(--h-2, #e0d0c0);
   font-family: Mulish;
@@ -2940,6 +2963,11 @@ body.ie ._ibg img {
   line-height: 145%;
   letter-spacing: -0.4px;
   margin-bottom: 16px;
+}
+@media (max-width: 768px) {
+  .how-to .how-to__container .how-to__item p {
+    font-size: 16px;
+  }
 }
 .how-to .how-to__container .how-to__item h3 {
   margin-top: 100px;
@@ -2952,6 +2980,12 @@ body.ie ._ibg img {
   text-transform: uppercase;
   margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+  .how-to .how-to__container .how-to__item h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+}
 .how-to .how-to__container .how-to__item h5 {
   margin: 20px 0;
   color: var(--h-2, #e0d0c0);
@@ -2961,6 +2995,11 @@ body.ie ._ibg img {
   font-weight: 700;
   line-height: 130%;
   text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .how-to .how-to__container .how-to__item h5 {
+    font-size: 20px;
+  }
 }
 .how-to .how-to__container .how-to__item .how-to__item-button {
   padding-top: 40px;
@@ -4280,21 +4319,43 @@ body.ie ._ibg img {
   text-transform: uppercase;
 }
 
+.author-news {
+  padding: 0 20px 150px;
+}
+@media (max-width: 768px) {
+  .author-news {
+    padding-bottom: 100px;
+  }
+}
 .author-news .author-news__container {
   width: 100%;
-  margin-bottom: 150px;
+  max-width: 800px;
+}
+@media (max-width: 768px) {
+  .author-news .author-news__container {
+    max-width: 440px;
+  }
 }
 .author-news .author-news__container .author-news__info {
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 20px;
+  justify-content: flex-start;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .author-news .author-news__container .author-news__info {
+    flex-direction: column;
+  }
 }
 .author-news .author-news__container .author-news__info .author-news__title {
   display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   position: relative;
+  width: 100%;
 }
-.author-news .author-news__container .author-news__info .author-news__title h4 {
+.author-news .author-news__container .author-news__info .author-news__title h2 {
   margin: 0 auto;
   max-width: 794px;
   color: var(--h-1, #eee1d2);
@@ -4306,6 +4367,11 @@ body.ie ._ibg img {
   /* 50.4px */
   letter-spacing: -0.84px;
   text-transform: uppercase;
+}
+@media (max-width: 768px) {
+  .author-news .author-news__container .author-news__info .author-news__title h2 {
+    font-size: 28px;
+  }
 }
 .author-news .author-news__container .author-news__info .author-news__title svg {
   position: absolute;
@@ -4323,8 +4389,20 @@ body.ie ._ibg img {
   /* 31.2px */
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .author-news .author-news__container .author-news__info .author-news__info-video p {
+    font-size: 20px;
+  }
+}
 .author-news .author-news__container .author-news__info .author-news__info-video img {
   margin-top: 40px;
+  width: 100%;
+  display: block;
+}
+@media (max-width: 768px) {
+  .author-news .author-news__container .author-news__info .author-news__info-video img {
+    margin-top: 20px;
+  }
 }
 
 .method-main {
@@ -4495,12 +4573,17 @@ body.ie ._ibg img {
 
 .seminar {
   width: 100%;
+  padding: 100px 20px 0;
 }
 .seminar .seminar__container {
   max-width: 800px;
 }
+@media (max-width: 768px) {
+  .seminar .seminar__container {
+    max-width: 440px;
+  }
+}
 .seminar .seminar__container .seminar-title {
-  padding-top: 101px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -4521,6 +4604,26 @@ body.ie ._ibg img {
   letter-spacing: -2.6px;
   text-transform: uppercase;
 }
+@media (max-width: 1200px) {
+  .seminar .seminar__container .seminar-title .seminar__title-icon h1 {
+    font-size: 108px;
+  }
+}
+@media (max-width: 1024px) {
+  .seminar .seminar__container .seminar-title .seminar__title-icon h1 {
+    font-size: 88px;
+  }
+}
+@media (max-width: 768px) {
+  .seminar .seminar__container .seminar-title .seminar__title-icon h1 {
+    font-size: 80px;
+  }
+}
+@media (max-width: 520px) {
+  .seminar .seminar__container .seminar-title .seminar__title-icon h1 {
+    font-size: 50px;
+  }
+}
 .seminar .seminar__container .seminar-title .seminar__title-icon .bg_img {
   position: absolute;
 }
@@ -4528,10 +4631,24 @@ body.ie ._ibg img {
   top: -25px;
   left: -22px;
 }
+@media (max-width: 768px) {
+  .seminar .seminar__container .seminar-title .seminar__title-icon .bg_img:nth-child(1) {
+    width: 30px;
+    height: 30px;
+    top: 0;
+  }
+}
 .seminar .seminar__container .seminar-title .seminar__title-icon .bg_img:nth-child(2) {
   bottom: -11px;
   right: -32px;
   filter: blur(2px);
+}
+@media (max-width: 768px) {
+  .seminar .seminar__container .seminar-title .seminar__title-icon .bg_img:nth-child(2) {
+    width: 30px;
+    height: 30px;
+    bottom: 0;
+  }
 }
 .seminar .seminar__container .seminar-title p {
   color: var(--h-1, #eee1d2);
@@ -4543,8 +4660,18 @@ body.ie ._ibg img {
   font-weight: 500;
   line-height: 130%;
 }
+@media (max-width: 768px) {
+  .seminar .seminar__container .seminar-title p {
+    font-size: 16px;
+  }
+}
 .seminar .seminar__container .seminar__info-top {
   margin-top: 150px;
+}
+@media (max-width: 768px) {
+  .seminar .seminar__container .seminar__info-top {
+    margin-bottom: 100px;
+  }
 }
 .seminar .seminar__container .seminar__info-top h2 {
   margin-bottom: 40px;
@@ -4556,11 +4683,21 @@ body.ie ._ibg img {
   line-height: 130%;
   text-transform: uppercase;
 }
+@media (max-width: 768px) {
+  .seminar .seminar__container .seminar__info-top h2 {
+    font-size: 28px;
+  }
+}
 .seminar .seminar__container .seminar__info-top .seminar__info-img {
   width: 100%;
   display: flex;
   justify-content: center;
-  column-gap: 20px;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .seminar .seminar__container .seminar__info-top .seminar__info-img {
+    flex-direction: column-reverse;
+  }
 }
 .seminar .seminar__container .seminar__info-top .seminar__info-img img {
   max-width: 285px;
@@ -4577,6 +4714,12 @@ body.ie ._ibg img {
   line-height: 145%;
   letter-spacing: -0.4px;
 }
+@media (max-width: 768px) {
+  .seminar .seminar__container .seminar__info-top .seminar__info-img p {
+    max-width: unset;
+    font-size: 16px;
+  }
+}
 .seminar .seminar__container .seminar__info-bottom {
   width: 100%;
   display: flex;
@@ -4586,6 +4729,11 @@ body.ie ._ibg img {
   row-gap: 20px;
   margin-top: 20px;
   margin-bottom: 150px;
+}
+@media (max-width: 768px) {
+  .seminar .seminar__container .seminar__info-bottom {
+    margin-bottom: 100px;
+  }
 }
 .seminar .seminar__container .seminar__info-bottom p {
   max-width: 794px;
@@ -4597,14 +4745,25 @@ body.ie ._ibg img {
   line-height: 145%;
   letter-spacing: -0.4px;
 }
+@media (max-width: 768px) {
+  .seminar .seminar__container .seminar__info-bottom p {
+    font-size: 16px;
+  }
+}
 .seminar .seminar__container .seminar__info-bottom img {
   object-fit: cover;
   max-width: 793px;
+  width: 100%;
 }
 
 .schedule-seminar {
   width: 100%;
   padding: 0 20px 150px;
+}
+@media (max-width: 768px) {
+  .schedule-seminar {
+    padding-bottom: 100px;
+  }
 }
 .schedule-seminar .schedule-seminar__container {
   max-width: 800px;
@@ -4612,6 +4771,11 @@ body.ie ._ibg img {
 @media (max-width: 1200px) {
   .schedule-seminar .schedule-seminar__container {
     max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .schedule-seminar .schedule-seminar__container {
+    max-width: 440px;
   }
 }
 .schedule-seminar .schedule-seminar__container h2 {
@@ -4639,6 +4803,11 @@ body.ie ._ibg img {
   align-items: flex-start;
   gap: 20px;
 }
+@media (max-width: 768px) {
+  .schedule-seminar .schedule-seminar__container .schedule-seminar__box .schedule-seminar__item {
+    flex-direction: column;
+  }
+}
 .schedule-seminar .schedule-seminar__container .schedule-seminar__box .schedule-seminar__item .schedule-seminar__item-left {
   width: 100%;
   max-width: 286px;
@@ -4652,6 +4821,11 @@ body.ie ._ibg img {
   font-weight: 700;
   line-height: 120%;
   /* 28.8px */
+}
+@media (max-width: 768px) {
+  .schedule-seminar .schedule-seminar__container .schedule-seminar__box .schedule-seminar__item .schedule-seminar__item-left p {
+    font-size: 20px;
+  }
 }
 .schedule-seminar .schedule-seminar__container .schedule-seminar__box .schedule-seminar__item .schedule-seminar__item-left span {
   color: var(--h-1, #eee1d2);
@@ -4674,6 +4848,11 @@ body.ie ._ibg img {
   font-weight: 400;
   line-height: 145%;
   letter-spacing: -0.4px;
+}
+@media (max-width: 768px) {
+  .schedule-seminar .schedule-seminar__container .schedule-seminar__box .schedule-seminar__item .schedule-seminar__item-right h3 {
+    font-size: 16px;
+  }
 }
 .schedule-seminar .schedule-seminar__container .schedule-seminar__box .schedule-seminar__item .schedule-seminar__item-right .schedule-seminar__item-teacher {
   width: 100%;
